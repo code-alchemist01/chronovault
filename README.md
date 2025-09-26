@@ -263,7 +263,14 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 - **Discussions**: [GitHub Discussions](https://github.com/code-alchemist01/tcfs/discussions)
 - **Documentation**: [Wiki](https://github.com/code-alchemist01/tcfs/wiki)
 
+## 🗺️ Update Ideas
 
+- [ ] GUI App
+- [ ] Mobile Apps (iOS/Android)
+- [ ] Cloud Storage Integration
+- [ ] Multi-User Support
+- [ ] Advanced Policy Options
+- [ ] Backup and Recovery Tools
 
 ---
 
