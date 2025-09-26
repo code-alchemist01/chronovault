@@ -1,8 +1,5 @@
 param(
-    [Parameter(Position=0)]
-    [string]$Command,
-    
-    [Parameter(Position=1, ValueFromRemainingArguments=$true)]
+    [Parameter(ValueFromRemainingArguments=$true)]
     [string[]]$Arguments
 )
 
@@ -22,8 +19,8 @@ Write-Host "    Time Capsule File System (TCFS)" -ForegroundColor Cyan
 Write-Host "========================================" -ForegroundColor Cyan
 Write-Host ""
 
-# If no command provided, show help
-if (-not $Command) {
+# If no arguments provided, show help
+if (-not $Arguments -or $Arguments.Count -eq 0) {
     Write-Host "Kullanim:" -ForegroundColor Green
     Write-Host "  .\tcfs.ps1 init                    - TCFS store'u baslatir" -ForegroundColor White
     Write-Host "  .\tcfs.ps1 lock [dosya]           - Dosyayi zaman kapsulune kilitler" -ForegroundColor White
@@ -40,8 +37,17 @@ if (-not $Command) {
     & $tcfsPath --help
 } else {
     # Execute TCFS with provided arguments
-    $allArgs = @($Command) + $Arguments
-    & $tcfsPath $allArgs
+    Write-Host "Calistiriliyor: tcfs $($Arguments -join ' ')" -ForegroundColor Yellow
+    Write-Host ""
+    & $tcfsPath $Arguments
+    
+    if ($LASTEXITCODE -eq 0) {
+        Write-Host ""
+        Write-Host "Islem basarili!" -ForegroundColor Green
+    } else {
+        Write-Host ""
+        Write-Host "HATA: Komut basarisiz oldu. Yukaridaki hata mesajini kontrol edin." -ForegroundColor Red
+    }
 }
 
 Write-Host ""
