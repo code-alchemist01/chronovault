@@ -1,0 +1,11 @@
+{
+	"InstallScripts" : 
+	[
+		"C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/cmake_install.cmake",
+		"C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/cmake_install.cmake",
+		"C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/libtcfs/cmake_install.cmake",
+		"C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/cli/cmake_install.cmake",
+		"C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/cmake_install.cmake"
+	],
+	"Parallel" : false
+}

@@ -1,0 +1,20 @@
+1:@èûUû.DefaultConstruction
+3:PäûUû.IsUnlockTimeReached
+7:áb£Uû.SetAndGetGracePeriod
+8:á]£Uû.SetAndGetAlgorithm
+9:`a£Uû.SetAndGetKDFType
+10:░\£Uû.JSONSerialization
+14:Éc£Uû.SaltGeneration
+17:ág£Uû.EncryptionWithWrongKey
+20:`f£Uû.Base64Conversion
+21:ÇZ£Uû.EmptyDataHandling
+22:@Y£Uû.ErrorCodeToString
+23:ºZ£Uû.TCFSExceptionConstruction
+24: µúUû.TCFSExceptionWithoutMessage
+25:@¯úUû.ResultSuccess
+27:úUû.ResultVoidSuccess
+28:`úUû.ResultVoidError
+29: ßúUû.ResultMoveSemantics
+30:É¯úUû.ResultCopySemantics
+31:░úUû.ResultErrorWithoutMessage
+32:tcfs_unit_tests

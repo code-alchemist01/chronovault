@@ -1,0 +1,544 @@
+Start testing: Sep 26 15:20 T�rkiye Standart Saati
+----------------------------------------------------------
+1/32 Testing: @èûUû.DefaultConstruction
+1/32 Test: @èûUû.DefaultConstruction
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=@èûUû.DefaultConstruction" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"@èûUû.DefaultConstruction" start time: Sep 26 15:20 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   6.14 sec
+----------------------------------------------------------
+Test Failed.
+"@èûUû.DefaultConstruction" end time: Sep 26 15:20 T�rkiye Standart Saati
+"@èûUû.DefaultConstruction" time elapsed: 00:00:06
+----------------------------------------------------------
+
+2/32 Testing: .SetAndGetUnlockTime
+2/32 Test: .SetAndGetUnlockTime
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=.SetAndGetUnlockTime" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+".SetAndGetUnlockTime" start time: Sep 26 15:20 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = .SetAndGetUnlockTime
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+".SetAndGetUnlockTime" end time: Sep 26 15:20 T�rkiye Standart Saati
+".SetAndGetUnlockTime" time elapsed: 00:00:00
+----------------------------------------------------------
+
+3/32 Testing: PäûUû.IsUnlockTimeReached
+3/32 Test: PäûUû.IsUnlockTimeReached
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=PäûUû.IsUnlockTimeReached" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"PäûUû.IsUnlockTimeReached" start time: Sep 26 15:20 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   5.43 sec
+----------------------------------------------------------
+Test Failed.
+"PäûUû.IsUnlockTimeReached" end time: Sep 26 15:20 T�rkiye Standart Saati
+"PäûUû.IsUnlockTimeReached" time elapsed: 00:00:05
+----------------------------------------------------------
+
+4/32 Testing: ÇåûUû.SetAndGetOwner
+4/32 Test: ÇåûUû.SetAndGetOwner
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=ÇåûUû.SetAndGetOwner" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"ÇåûUû.SetAndGetOwner" start time: Sep 26 15:20 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = ���U�.SetAndGetOwner
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"ÇåûUû.SetAndGetOwner" end time: Sep 26 15:20 T�rkiye Standart Saati
+"ÇåûUû.SetAndGetOwner" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/32 Testing: ­ûUû.SetAndGetLabel
+5/32 Test: ­ûUû.SetAndGetLabel
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=­ûUû.SetAndGetLabel" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"­ûUû.SetAndGetLabel" start time: Sep 26 15:20 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = ��U�.SetAndGetLabel
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"­ûUû.SetAndGetLabel" end time: Sep 26 15:20 T�rkiye Standart Saati
+"­ûUû.SetAndGetLabel" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/32 Testing: 0ïûUû.SetAndGetNotes
+6/32 Test: 0ïûUû.SetAndGetNotes
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=0ïûUû.SetAndGetNotes" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"0ïûUû.SetAndGetNotes" start time: Sep 26 15:20 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = 0��U�.SetAndGetNotes
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"0ïûUû.SetAndGetNotes" end time: Sep 26 15:20 T�rkiye Standart Saati
+"0ïûUû.SetAndGetNotes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/32 Testing: áb£Uû.SetAndGetGracePeriod
+7/32 Test: áb£Uû.SetAndGetGracePeriod
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=áb£Uû.SetAndGetGracePeriod" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"áb£Uû.SetAndGetGracePeriod" start time: Sep 26 15:20 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   5.40 sec
+----------------------------------------------------------
+Test Failed.
+"áb£Uû.SetAndGetGracePeriod" end time: Sep 26 15:20 T�rkiye Standart Saati
+"áb£Uû.SetAndGetGracePeriod" time elapsed: 00:00:05
+----------------------------------------------------------
+
+8/32 Testing: á]£Uû.SetAndGetAlgorithm
+8/32 Test: á]£Uû.SetAndGetAlgorithm
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=á__csb£Uû.SetAndGetAlgorithm" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"á]£Uû.SetAndGetAlgorithm" start time: Sep 26 15:20 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   5.48 sec
+----------------------------------------------------------
+Test Failed.
+"á]£Uû.SetAndGetAlgorithm" end time: Sep 26 15:20 T�rkiye Standart Saati
+"á]£Uû.SetAndGetAlgorithm" time elapsed: 00:00:05
+----------------------------------------------------------
+
+9/32 Testing: `a£Uû.SetAndGetKDFType
+9/32 Test: `a£Uû.SetAndGetKDFType
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=`a£Uû.SetAndGetKDFType" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"`a£Uû.SetAndGetKDFType" start time: Sep 26 15:20 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   5.50 sec
+----------------------------------------------------------
+Test Failed.
+"`a£Uû.SetAndGetKDFType" end time: Sep 26 15:20 T�rkiye Standart Saati
+"`a£Uû.SetAndGetKDFType" time elapsed: 00:00:05
+----------------------------------------------------------
+
+10/32 Testing: ░\£Uû.JSONSerialization
+10/32 Test: ░\£Uû.JSONSerialization
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=░\£Uû.JSONSerialization" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"░\£Uû.JSONSerialization" start time: Sep 26 15:20 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  21.85 sec
+----------------------------------------------------------
+Test Failed.
+"░\£Uû.JSONSerialization" end time: Sep 26 15:20 T�rkiye Standart Saati
+"░\£Uû.JSONSerialization" time elapsed: 00:00:21
+----------------------------------------------------------
+
+11/32 Testing: Çd£Uû.Validation
+11/32 Test: Çd£Uû.Validation
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=Çd£Uû.Validation" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"Çd£Uû.Validation" start time: Sep 26 15:20 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = �d�U�.Validation
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"Çd£Uû.Validation" end time: Sep 26 15:20 T�rkiye Standart Saati
+"Çd£Uû.Validation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/32 Testing: 0Z£Uû.KeyGeneration
+12/32 Test: 0Z£Uû.KeyGeneration
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=0Z£Uû.KeyGeneration" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"0Z£Uû.KeyGeneration" start time: Sep 26 15:20 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = 0Z�U�.KeyGeneration
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"0Z£Uû.KeyGeneration" end time: Sep 26 15:20 T�rkiye Standart Saati
+"0Z£Uû.KeyGeneration" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/32 Testing: a£Uû.IVGeneration
+13/32 Test: a£Uû.IVGeneration
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=a£Uû.IVGeneration" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"a£Uû.IVGeneration" start time: Sep 26 15:20 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = a�U�.IVGeneration
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"a£Uû.IVGeneration" end time: Sep 26 15:20 T�rkiye Standart Saati
+"a£Uû.IVGeneration" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/32 Testing: Éc£Uû.SaltGeneration
+14/32 Test: Éc£Uû.SaltGeneration
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=Éc£Uû.SaltGeneration" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"Éc£Uû.SaltGeneration" start time: Sep 26 15:20 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   6.00 sec
+----------------------------------------------------------
+Test Failed.
+"Éc£Uû.SaltGeneration" end time: Sep 26 15:20 T�rkiye Standart Saati
+"Éc£Uû.SaltGeneration" time elapsed: 00:00:06
+----------------------------------------------------------
+
+15/32 Testing: 0_£Uû.KeyDerivation
+15/32 Test: 0_£Uû.KeyDerivation
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=0_£Uû.KeyDerivation" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"0_£Uû.KeyDerivation" start time: Sep 26 15:20 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = 0_�U�.KeyDerivation
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"0_£Uû.KeyDerivation" end time: Sep 26 15:20 T�rkiye Standart Saati
+"0_£Uû.KeyDerivation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/32 Testing: .EncryptionDecryption
+16/32 Test: .EncryptionDecryption
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=.EncryptionDecryption" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+".EncryptionDecryption" start time: Sep 26 15:20 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = .EncryptionDecryption
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+".EncryptionDecryption" end time: Sep 26 15:20 T�rkiye Standart Saati
+".EncryptionDecryption" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/32 Testing: ág£Uû.EncryptionWithWrongKey
+17/32 Test: ág£Uû.EncryptionWithWrongKey
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=ág£Uû.EncryptionWithWrongKey" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"ág£Uû.EncryptionWithWrongKey" start time: Sep 26 15:20 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   6.18 sec
+----------------------------------------------------------
+Test Failed.
+"ág£Uû.EncryptionWithWrongKey" end time: Sep 26 15:21 T�rkiye Standart Saati
+"ág£Uû.EncryptionWithWrongKey" time elapsed: 00:00:06
+----------------------------------------------------------
+
+18/32 Testing: Pg£Uû.SHA256Hashing
+18/32 Test: Pg£Uû.SHA256Hashing
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=Pg£Uû.SHA256Hashing" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"Pg£Uû.SHA256Hashing" start time: Sep 26 15:21 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = Pg�U�.SHA256Hashing
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.08 sec
+----------------------------------------------------------
+Test Passed.
+"Pg£Uû.SHA256Hashing" end time: Sep 26 15:21 T�rkiye Standart Saati
+"Pg£Uû.SHA256Hashing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/32 Testing: pe£Uû.HexConversion
+19/32 Test: pe£Uû.HexConversion
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=pe£Uû.HexConversion" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"pe£Uû.HexConversion" start time: Sep 26 15:21 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = pe�U�.HexConversion
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"pe£Uû.HexConversion" end time: Sep 26 15:21 T�rkiye Standart Saati
+"pe£Uû.HexConversion" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/32 Testing: `f£Uû.Base64Conversion
+20/32 Test: `f£Uû.Base64Conversion
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=`f£Uû.Base64Conversion" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"`f£Uû.Base64Conversion" start time: Sep 26 15:21 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =  16.45 sec
+----------------------------------------------------------
+Test Failed.
+"`f£Uû.Base64Conversion" end time: Sep 26 15:21 T�rkiye Standart Saati
+"`f£Uû.Base64Conversion" time elapsed: 00:00:16
+----------------------------------------------------------
+
+21/32 Testing: ÇZ£Uû.EmptyDataHandling
+21/32 Test: ÇZ£Uû.EmptyDataHandling
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=ÇZ£Uû.EmptyDataHandling" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"ÇZ£Uû.EmptyDataHandling" start time: Sep 26 15:21 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   5.94 sec
+----------------------------------------------------------
+Test Failed.
+"ÇZ£Uû.EmptyDataHandling" end time: Sep 26 15:21 T�rkiye Standart Saati
+"ÇZ£Uû.EmptyDataHandling" time elapsed: 00:00:05
+----------------------------------------------------------
+
+22/32 Testing: @Y£Uû.ErrorCodeToString
+22/32 Test: @Y£Uû.ErrorCodeToString
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=@Y£Uû.ErrorCodeToString" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"@Y£Uû.ErrorCodeToString" start time: Sep 26 15:21 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   5.80 sec
+----------------------------------------------------------
+Test Failed.
+"@Y£Uû.ErrorCodeToString" end time: Sep 26 15:21 T�rkiye Standart Saati
+"@Y£Uû.ErrorCodeToString" time elapsed: 00:00:05
+----------------------------------------------------------
+
+23/32 Testing: ºZ£Uû.TCFSExceptionConstruction
+23/32 Test: ºZ£Uû.TCFSExceptionConstruction
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=ºZ£Uû.TCFSExceptionConstruction" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"ºZ£Uû.TCFSExceptionConstruction" start time: Sep 26 15:21 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   5.76 sec
+----------------------------------------------------------
+Test Failed.
+"ºZ£Uû.TCFSExceptionConstruction" end time: Sep 26 15:21 T�rkiye Standart Saati
+"ºZ£Uû.TCFSExceptionConstruction" time elapsed: 00:00:05
+----------------------------------------------------------
+
+24/32 Testing:  µúUû.TCFSExceptionWithoutMessage
+24/32 Test:  µúUû.TCFSExceptionWithoutMessage
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter= µúUû.TCFSExceptionWithoutMessage" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+" µúUû.TCFSExceptionWithoutMessage" start time: Sep 26 15:21 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   5.70 sec
+----------------------------------------------------------
+Test Failed.
+" µúUû.TCFSExceptionWithoutMessage" end time: Sep 26 15:21 T�rkiye Standart Saati
+" µúUû.TCFSExceptionWithoutMessage" time elapsed: 00:00:05
+----------------------------------------------------------
+
+25/32 Testing: @¯úUû.ResultSuccess
+25/32 Test: @¯úUû.ResultSuccess
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=@¯úUû.ResultSuccess" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"@¯úUû.ResultSuccess" start time: Sep 26 15:21 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   5.53 sec
+----------------------------------------------------------
+Test Failed.
+"@¯úUû.ResultSuccess" end time: Sep 26 15:21 T�rkiye Standart Saati
+"@¯úUû.ResultSuccess" time elapsed: 00:00:05
+----------------------------------------------------------
+
+26/32 Testing: Ó¯úUû.ResultError
+26/32 Test: Ó¯úUû.ResultError
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=Ó¯úUû.ResultError" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"Ó¯úUû.ResultError" start time: Sep 26 15:21 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = ӯ�U�.ResultError
+[==========] Running 0 tests from 0 test suites.
+[==========] 0 tests from 0 test suites ran. (0 ms total)
+[  PASSED  ] 0 tests.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"Ó¯úUû.ResultError" end time: Sep 26 15:21 T�rkiye Standart Saati
+"Ó¯úUû.ResultError" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/32 Testing: úUû.ResultVoidSuccess
+27/32 Test: úUû.ResultVoidSuccess
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=úUû.ResultVoidSuccess" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"úUû.ResultVoidSuccess" start time: Sep 26 15:21 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   5.65 sec
+----------------------------------------------------------
+Test Failed.
+"úUû.ResultVoidSuccess" end time: Sep 26 15:21 T�rkiye Standart Saati
+"úUû.ResultVoidSuccess" time elapsed: 00:00:05
+----------------------------------------------------------
+
+28/32 Testing: `úUû.ResultVoidError
+28/32 Test: `úUû.ResultVoidError
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=`úUû.ResultVoidError" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"`úUû.ResultVoidError" start time: Sep 26 15:21 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   6.65 sec
+----------------------------------------------------------
+Test Failed.
+"`úUû.ResultVoidError" end time: Sep 26 15:22 T�rkiye Standart Saati
+"`úUû.ResultVoidError" time elapsed: 00:00:06
+----------------------------------------------------------
+
+29/32 Testing:  ßúUû.ResultMoveSemantics
+29/32 Test:  ßúUû.ResultMoveSemantics
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter= ßúUû.ResultMoveSemantics" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+" ßúUû.ResultMoveSemantics" start time: Sep 26 15:22 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   5.92 sec
+----------------------------------------------------------
+Test Failed.
+" ßúUû.ResultMoveSemantics" end time: Sep 26 15:22 T�rkiye Standart Saati
+" ßúUû.ResultMoveSemantics" time elapsed: 00:00:05
+----------------------------------------------------------
+
+30/32 Testing: É¯úUû.ResultCopySemantics
+30/32 Test: É¯úUû.ResultCopySemantics
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=É¯úUû.ResultCopySemantics" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"É¯úUû.ResultCopySemantics" start time: Sep 26 15:22 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   6.19 sec
+----------------------------------------------------------
+Test Failed.
+"É¯úUû.ResultCopySemantics" end time: Sep 26 15:22 T�rkiye Standart Saati
+"É¯úUû.ResultCopySemantics" time elapsed: 00:00:06
+----------------------------------------------------------
+
+31/32 Testing: ░úUû.ResultErrorWithoutMessage
+31/32 Test: ░úUû.ResultErrorWithoutMessage
+Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=░úUû.ResultErrorWithoutMessage" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"░úUû.ResultErrorWithoutMessage" start time: Sep 26 15:22 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   6.30 sec
+----------------------------------------------------------
+Test Failed.
+"░úUû.ResultErrorWithoutMessage" end time: Sep 26 15:22 T�rkiye Standart Saati
+"░úUû.ResultErrorWithoutMessage" time elapsed: 00:00:06
+----------------------------------------------------------
+
+Test not available without configuration.  (Missing "-C <config>"?)
+32/32 Testing: tcfs_unit_tests
+32/32 Test: tcfs_unit_tests
+Command: "NOT_AVAILABLE"
+Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
+"tcfs_unit_tests" start time: 
+Output:
+----------------------------------------------------------
+<end of output>
+Test time =   0.00 sec
+----------------------------------------------------------
+Test Passed.
+"tcfs_unit_tests" end time: Sep 26 15:22 T�rkiye Standart Saati
+"tcfs_unit_tests" time elapsed: 00:00:00
+----------------------------------------------------------
+
+End testing: Sep 26 15:22 T�rkiye Standart Saati

@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\tests\test_policy.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\tests\test_crypto.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\tests\test_errors.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\tests\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Natvis Include="C:\Users\excalibur\anaconda3\Library\nlohmann_json.natvis" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{0578CD8D-28B6-3432-B513-4C99A3855BDC}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

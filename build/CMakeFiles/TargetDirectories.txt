@@ -1,0 +1,15 @@
+C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/CMakeFiles/RUN_TESTS.dir
+C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/CMakeFiles/INSTALL.dir
+C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/CMakeFiles/ALL_BUILD.dir
+C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/CMakeFiles/ZERO_CHECK.dir
+C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/CMakeFiles/RUN_TESTS.dir
+C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/CMakeFiles/INSTALL.dir
+C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/libtcfs/CMakeFiles/libtcfs.dir
+C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/libtcfs/CMakeFiles/RUN_TESTS.dir
+C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/libtcfs/CMakeFiles/INSTALL.dir
+C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/cli/CMakeFiles/tcfs_cli.dir
+C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/cli/CMakeFiles/RUN_TESTS.dir
+C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/cli/CMakeFiles/INSTALL.dir
+C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/CMakeFiles/tcfs_tests.dir
+C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/CMakeFiles/RUN_TESTS.dir
+C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/CMakeFiles/INSTALL.dir
