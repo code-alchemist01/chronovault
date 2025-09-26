@@ -112,6 +112,8 @@ File unlocked successfully!
 Decrypted file: geri_yuklenen_belge.txt
 ```
 
+<img width="688" height="563" alt="Ekran görüntüsü 2025-09-26 174052" src="https://github.com/user-attachments/assets/696c77d9-2cec-4fc9-b685-306a2764de74" />
+
 ## 🏗️ Mimari
 
 ### Temel Bileşenler
@@ -171,6 +173,8 @@ zaman_kapsullerim/              # TCFS Deposu
   "tool_version": "0.1.0"
 }
 ```
+
+<img width="580" height="483" alt="Ekran görüntüsü 2025-09-26 174108" src="https://github.com/user-attachments/assets/d93d0767-ccf1-4a9d-af55-559c66fd8a3c" />
 
 ## 🛠️ Geliştirme
 
