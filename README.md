@@ -112,6 +112,8 @@ File unlocked successfully!
 Decrypted file: restored_document.txt
 ```
 
+<img width="688" height="563" alt="Ekran görüntüsü 2025-09-26 174052" src="https://github.com/user-attachments/assets/1b315dff-460d-488d-a675-f9f31f52e42a" />
+
 ## 🏗️ Architecture
 
 ### Core Components
@@ -171,6 +173,9 @@ my_capsules/                    # TCFS Store
   "tool_version": "0.1.0"
 }
 ```
+
+<img width="580" height="483" alt="Ekran görüntüsü 2025-09-26 174108" src="https://github.com/user-attachments/assets/b36270ed-d6f6-4951-b9b6-400ab308601d" />
+
 
 ## 🛠️ Development
 
