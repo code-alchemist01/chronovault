@@ -1,6 +1,6 @@
 # TCFS - Zaman Kapsülü Dosya Sistemi
 
-[![Build Status](https://github.com/username/tcfs/workflows/CI/badge.svg)](https://github.com/username/tcfs/actions)
+[![Build Status](https://github.com/username/tcfs/workflows/CI/badge.svg)](https://github.com/code-alchemist01/tcfs/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![C++](https://img.shields.io/badge/C++-17-blue.svg)](https://isocpp.org/)
 
@@ -259,11 +259,11 @@ Bu proje MIT Lisansı altında lisanslanmıştır - detaylar için [LICENSE](LIC
 
 ## 📞 Destek
 
-- **Sorunlar**: [GitHub Issues](https://github.com/username/tcfs/issues)
-- **Tartışmalar**: [GitHub Discussions](https://github.com/username/tcfs/discussions)
-- **Dokümantasyon**: [Wiki](https://github.com/username/tcfs/wiki)
+- **Sorunlar**: [GitHub Issues](https://github.com/code-alchemist01/tcfs/issues)
+- **Tartışmalar**: [GitHub Discussions](https://github.com/code-alchemist01/tcfs/discussions)
+- **Dokümantasyon**: [Wiki](https://github.com/code-alchemist01/tcfs/wiki)
 
-## 🗺️ Yol Haritası
+## 🗺️ Güncelleme Fikirleri
 
 - [ ] GUI Uygulaması
 - [ ] Mobil Uygulamalar (iOS/Android)
