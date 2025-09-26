@@ -1,6 +1,6 @@
 # TCFS - Zaman Kapsülü Dosya Sistemi
 
-[![Build Status](https://github.com/username/tcfs/workflows/CI/badge.svg)](https://github.com/code-alchemist01/tcfs/actions)
+[![Build Status](https://github.com/code-alchemist01/chronovault/workflows/CI/badge.svg)](https://github.com/code-alchemist01/chronovault/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![C++](https://img.shields.io/badge/C++-17-blue.svg)](https://isocpp.org/)
 
@@ -29,8 +29,8 @@
 
 ```bash
 # Depoyu klonlayın
-git clone https://github.com/username/tcfs.git
-cd tcfs
+git clone https://github.com/code-alchemist01/chronovault.git
+cd chronovault
 
 # Build dizini oluşturun
 mkdir build && cd build
@@ -205,14 +205,23 @@ cmake --build . --config Debug
 ### Testleri Çalıştırma
 
 ```bash
-# Testleri derle
-cmake --build . --target tcfs_tests
+# Testleri derle (Release konfigürasyonu önerilir)
+cmake --build . --config Release
 
 # Testleri çalıştır
-./tests/tcfs_tests  # Linux/macOS
+ctest -C Release --verbose  # Tüm platformlar
+
+# Veya testleri doğrudan çalıştır
+./build/tests/Release/tcfs_tests  # Linux/macOS
 # veya
-.\tests\Debug\tcfs_tests.exe  # Windows
+.\build\tests\Release\tcfs_tests.exe  # Windows
 ```
+
+**Test Sonuçları**: Toplam 32 birim test başarıyla geçiyor:
+- ✅ Kriptografik işlemler (AES-256-GCM, PBKDF2)
+- ✅ Politika yönetimi ve doğrulama
+- ✅ Hata yönetimi ve sınır durumları
+- ✅ Dosya işlemleri ve zaman tabanlı erişim kontrolü
 
 ## 🔒 Güvenlik Değerlendirmeleri
 
@@ -263,9 +272,9 @@ Bu proje MIT Lisansı altında lisanslanmıştır - detaylar için [LICENSE](LIC
 
 ## 📞 Destek
 
-- **Sorunlar**: [GitHub Issues](https://github.com/code-alchemist01/tcfs/issues)
-- **Tartışmalar**: [GitHub Discussions](https://github.com/code-alchemist01/tcfs/discussions)
-- **Dokümantasyon**: [Wiki](https://github.com/code-alchemist01/tcfs/wiki)
+- **Sorunlar**: [GitHub Issues](https://github.com/code-alchemist01/chronovault/issues)
+- **Tartışmalar**: [GitHub Discussions](https://github.com/code-alchemist01/chronovault/discussions)
+- **Dokümantasyon**: [Wiki](https://github.com/code-alchemist01/chronovault/wiki)
 
 ## 🗺️ Güncelleme Fikirleri
 

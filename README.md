@@ -1,6 +1,6 @@
 # TCFS - Time Capsule File System
 
-[![Build Status](https://github.com/username/tcfs/workflows/CI/badge.svg)](https://github.com/code-alchemist01/tcfs/actions)
+[![Build Status](https://github.com/code-alchemist01/chronovault/workflows/CI/badge.svg)](https://github.com/code-alchemist01/chronovault/actions)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![C++](https://img.shields.io/badge/C++-17-blue.svg)](https://isocpp.org/)
 
@@ -29,8 +29,8 @@
 
 ```bash
 # Clone the repository
-git clone https://github.com/username/tcfs.git
-cd tcfs
+git clone https://github.com/code-alchemist01/chronovault.git
+cd chronovault
 
 # Create build directory
 mkdir build && cd build
@@ -206,14 +206,23 @@ cmake --build . --config Debug
 ### Running Tests
 
 ```bash
-# Build tests
-cmake --build . --target tcfs_tests
+# Build tests (Release configuration recommended)
+cmake --build . --config Release
 
 # Run tests
-./tests/tcfs_tests  # Linux/macOS
+ctest -C Release --verbose  # All platforms
+
+# Or run tests directly
+./build/tests/Release/tcfs_tests  # Linux/macOS
 # or
-.\tests\Debug\tcfs_tests.exe  # Windows
+.\build\tests\Release\tcfs_tests.exe  # Windows
 ```
+
+**Test Results**: All 32 unit tests pass successfully, including:
+- ✅ Cryptographic operations (AES-256-GCM, PBKDF2)
+- ✅ Policy management and validation
+- ✅ Error handling and edge cases
+- ✅ File operations and time-based access control
 
 ## 🔒 Security Considerations
 
@@ -264,9 +273,9 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ## 📞 Support
 
-- **Issues**: [GitHub Issues](https://github.com/code-alchemist01/tcfs/issues)
-- **Discussions**: [GitHub Discussions](https://github.com/code-alchemist01/tcfs/discussions)
-- **Documentation**: [Wiki](https://github.com/code-alchemist01/tcfs/wiki)
+- **Issues**: [GitHub Issues](https://github.com/code-alchemist01/chronovault/issues)
+- **Discussions**: [GitHub Discussions](https://github.com/code-alchemist01/chronovault/discussions)
+- **Documentation**: [Wiki](https://github.com/code-alchemist01/chronovault/wiki)
 
 ## 🗺️ Update Ideas
 
