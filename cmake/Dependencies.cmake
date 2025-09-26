@@ -7,6 +7,12 @@ find_package(OpenSSL QUIET)
 # Try to find nlohmann_json
 find_package(nlohmann_json QUIET)
 
+# Find CLI11 for command line interface
+find_package(CLI11 CONFIG QUIET)
+
+# Find GTest for testing
+find_package(GTest CONFIG QUIET)
+
 if(NOT nlohmann_json_FOUND)
     # Download nlohmann_json if not found
     include(FetchContent)
@@ -25,6 +31,17 @@ target_link_libraries(tcfs_dependencies
         Threads::Threads
         nlohmann_json::nlohmann_json
 )
+
+# Add CLI11 if found
+if(CLI11_FOUND)
+    target_link_libraries(tcfs_dependencies
+        INTERFACE
+            CLI11::CLI11
+    )
+    message(STATUS "CLI11 found and enabled")
+else()
+    message(WARNING "CLI11 not found - CLI features will be limited")
+endif()
 
 # Add OpenSSL if found
 if(OpenSSL_FOUND)

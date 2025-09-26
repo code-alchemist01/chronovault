@@ -1,7 +1,7 @@
 # Tests CMakeLists.txt
 
 # Find required packages for testing
-find_package(GTest QUIET)
+find_package(GTest CONFIG QUIET)
 
 if(NOT GTest_FOUND)
     # Download and build GoogleTest
@@ -33,13 +33,23 @@ set_target_properties(tcfs_tests PROPERTIES
 )
 
 # Link libraries
-target_link_libraries(tcfs_tests
-    PRIVATE
-        libtcfs
-        gtest_main
-        gtest
-        tcfs_dependencies
-)
+if(GTest_FOUND)
+    target_link_libraries(tcfs_tests
+        PRIVATE
+            libtcfs
+            GTest::gtest_main
+            GTest::gtest
+            tcfs_dependencies
+    )
+else()
+    target_link_libraries(tcfs_tests
+        PRIVATE
+            libtcfs
+            gtest_main
+            gtest
+            tcfs_dependencies
+    )
+endif()
 
 # Include directories
 target_include_directories(tcfs_tests
