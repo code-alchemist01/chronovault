@@ -65,6 +65,10 @@ nlohmann::json Policy::to_json() const {
 }
 
 Result<Policy> Policy::from_json(const nlohmann::json& json) {
+    return from_json(json, false);
+}
+
+Result<Policy> Policy::from_json(const nlohmann::json& json, bool skip_time_validation) {
     try {
         Policy policy;
         
@@ -103,9 +107,11 @@ Result<Policy> Policy::from_json(const nlohmann::json& json) {
             }
         }
         
-        auto validation = policy.validate();
-        if (!validation) {
-            return Result<Policy>(validation.error(), validation.error_message());
+        if (!skip_time_validation) {
+            auto validation = policy.validate();
+            if (!validation) {
+                return Result<Policy>(validation.error(), validation.error_message());
+            }
         }
         
         return Result<Policy>(std::move(policy));

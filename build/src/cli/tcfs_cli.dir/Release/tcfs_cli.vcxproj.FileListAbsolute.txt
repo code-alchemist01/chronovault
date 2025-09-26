@@ -1,0 +1,2 @@
+C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\build\src\cli\Release\libcrypto-3-x64.dll
+C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\build\src\cli\tcfs_cli.dir\Release\tcfs_cli.vcxproj.Up2Date

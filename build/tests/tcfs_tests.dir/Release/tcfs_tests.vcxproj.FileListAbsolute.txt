@@ -1,0 +1,4 @@
+C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\build\tests\Release\gtest.dll
+C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\build\tests\Release\libcrypto-3-x64.dll
+C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\build\tests\Release\gtest_main.dll
+C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\build\tests\tcfs_tests.dir\Release\tcfs_tes.6DE91E95.Up2Date

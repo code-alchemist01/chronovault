@@ -22,7 +22,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>{2D4FE070-942E-3B11-8ACA-881A59E485A1}</ProjectGuid>
+    <ProjectGuid>{FC7E7AF8-F1E4-3A40-94B0-9DB98E367A79}</ProjectGuid>
     <Keyword>Win32Proj</Keyword>
     <WindowsTargetPlatformVersion>10.0.26100.0</WindowsTargetPlatformVersion>
     <Platform>x64</Platform>
@@ -59,26 +59,26 @@
   <PropertyGroup Label="UserMacros" />
   <PropertyGroup>
     <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\build\src\libtcfs\Debug\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\build\src\libtcfs\Debug\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">libtcfs.dir\Debug\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">tcfs</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\build\src\libtcfs\Release\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\build\src\libtcfs\Release\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">libtcfs.dir\Release\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='Release|x64'">tcfs</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='Release|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\build\src\libtcfs\MinSizeRel\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\build\src\libtcfs\MinSizeRel\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">libtcfs.dir\MinSizeRel\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">tcfs</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">.lib</TargetExt>
-    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\build\src\libtcfs\RelWithDebInfo\</OutDir>
+    <OutDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\build\src\libtcfs\RelWithDebInfo\</OutDir>
     <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">libtcfs.dir\RelWithDebInfo\</IntDir>
     <TargetName Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">tcfs</TargetName>
     <TargetExt Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">.lib</TargetExt>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\include;C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\src\libtcfs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\include;C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\src\libtcfs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/excalibur/anaconda3/Library/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
@@ -96,16 +96,16 @@
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;TCFS_HAS_OPENSSL=0;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;TCFS_HAS_OPENSSL=1;CMAKE_INTDIR="Debug"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;TCFS_HAS_OPENSSL=0;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\include;C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\src\libtcfs;C:\Users\excalibur\anaconda3\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_DEBUG;_WINDOWS;TCFS_HAS_OPENSSL=1;CMAKE_INTDIR=\"Debug\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\include;C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\src\libtcfs;C:\Users\excalibur\anaconda3\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\include;C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\src\libtcfs;C:\Users\excalibur\anaconda3\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\include;C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\src\libtcfs;C:\Users\excalibur\anaconda3\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -118,7 +118,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\include;C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\src\libtcfs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\include;C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\src\libtcfs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/excalibur/anaconda3/Library/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -135,18 +135,18 @@
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TCFS_HAS_OPENSSL=0;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TCFS_HAS_OPENSSL=1;CMAKE_INTDIR="Release"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TCFS_HAS_OPENSSL=0;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\include;C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\src\libtcfs;C:\Users\excalibur\anaconda3\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TCFS_HAS_OPENSSL=1;CMAKE_INTDIR=\"Release\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\include;C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\src\libtcfs;C:\Users\excalibur\anaconda3\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\include;C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\src\libtcfs;C:\Users\excalibur\anaconda3\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\include;C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\src\libtcfs;C:\Users\excalibur\anaconda3\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -159,7 +159,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\include;C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\src\libtcfs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\include;C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\src\libtcfs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/excalibur/anaconda3/Library/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -176,18 +176,18 @@
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TCFS_HAS_OPENSSL=0;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TCFS_HAS_OPENSSL=1;CMAKE_INTDIR="MinSizeRel"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <DebugInformationFormat>
       </DebugInformationFormat>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TCFS_HAS_OPENSSL=0;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\include;C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\src\libtcfs;C:\Users\excalibur\anaconda3\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TCFS_HAS_OPENSSL=1;CMAKE_INTDIR=\"MinSizeRel\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\include;C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\src\libtcfs;C:\Users\excalibur\anaconda3\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\include;C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\src\libtcfs;C:\Users\excalibur\anaconda3\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\include;C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\src\libtcfs;C:\Users\excalibur\anaconda3\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -200,7 +200,7 @@
   </ItemDefinitionGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
     <ClCompile>
-      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\include;C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\src\libtcfs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\include;C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\src\libtcfs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <AdditionalOptions>%(AdditionalOptions) /external:I "C:/Users/excalibur/anaconda3/Library/include"</AdditionalOptions>
       <AssemblerListingLocation>$(IntDir)</AssemblerListingLocation>
       <BasicRuntimeChecks>Default</BasicRuntimeChecks>
@@ -218,16 +218,16 @@
       <SupportJustMyCode></SupportJustMyCode>
       <TreatWChar_tAsBuiltInType></TreatWChar_tAsBuiltInType>
       <UseFullPaths>false</UseFullPaths>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TCFS_HAS_OPENSSL=0;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TCFS_HAS_OPENSSL=1;CMAKE_INTDIR="RelWithDebInfo"</PreprocessorDefinitions>
       <ObjectFileName>$(IntDir)</ObjectFileName>
       <ScanSourceForModuleDependencies>false</ScanSourceForModuleDependencies>
     </ClCompile>
     <ResourceCompile>
-      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TCFS_HAS_OPENSSL=0;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\include;C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\src\libtcfs;C:\Users\excalibur\anaconda3\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>%(PreprocessorDefinitions);WIN32;_WINDOWS;NDEBUG;TCFS_HAS_OPENSSL=1;CMAKE_INTDIR=\"RelWithDebInfo\"</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\include;C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\src\libtcfs;C:\Users\excalibur\anaconda3\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
     </ResourceCompile>
     <Midl>
-      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\include;C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\src\libtcfs;C:\Users\excalibur\anaconda3\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\include;C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\src\libtcfs;C:\Users\excalibur\anaconda3\Library\include;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
       <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
       <HeaderFileName>%(Filename).h</HeaderFileName>
       <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
@@ -239,11 +239,11 @@
     </Lib>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <CustomBuild Include="C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\src\libtcfs\CMakeLists.txt">
+    <CustomBuild Include="C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\src\libtcfs\CMakeLists.txt">
       <UseUtf8Encoding>Always</UseUtf8Encoding>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/src/libtcfs/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/src/libtcfs/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/excalibur/Desktop/Projeler/Rust/tcfs -BC:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build --check-stamp-file C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/libtcfs/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault" "-BC:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build" --check-stamp-file "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/src/libtcfs/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -252,11 +252,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\build\src\libtcfs\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\build\src\libtcfs\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/src/libtcfs/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/src/libtcfs/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/excalibur/Desktop/Projeler/Rust/tcfs -BC:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build --check-stamp-file C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/libtcfs/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault" "-BC:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build" --check-stamp-file "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/src/libtcfs/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -265,11 +265,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\build\src\libtcfs\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\build\src\libtcfs\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/src/libtcfs/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/src/libtcfs/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/excalibur/Desktop/Projeler/Rust/tcfs -BC:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build --check-stamp-file C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/libtcfs/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault" "-BC:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build" --check-stamp-file "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/src/libtcfs/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -278,11 +278,11 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\build\src\libtcfs\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\build\src\libtcfs\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
-      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/src/libtcfs/CMakeLists.txt</Message>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/src/libtcfs/CMakeLists.txt</Message>
       <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/excalibur/Desktop/Projeler/Rust/tcfs -BC:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build --check-stamp-file C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/libtcfs/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault" "-BC:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build" --check-stamp-file "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/src/libtcfs/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
@@ -291,21 +291,21 @@ exit /b %1
 :cmDone
 if %errorlevel% neq 0 goto :VCEnd</Command>
       <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">%(AdditionalInputs)</AdditionalInputs>
-      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\build\src\libtcfs\CMakeFiles\generate.stamp</Outputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\build\src\libtcfs\CMakeFiles\generate.stamp</Outputs>
       <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\src\libtcfs\core\Errors.cpp" />
-    <ClCompile Include="C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\src\libtcfs\core\Policy.cpp" />
-    <ClCompile Include="C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\src\libtcfs\crypto\OpenSSLCryptoProvider.cpp" />
+    <ClCompile Include="C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\src\libtcfs\core\Errors.cpp" />
+    <ClCompile Include="C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\src\libtcfs\core\Policy.cpp" />
+    <ClCompile Include="C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\src\libtcfs\crypto\OpenSSLCryptoProvider.cpp" />
     <Natvis Include="C:\Users\excalibur\anaconda3\Library\nlohmann_json.natvis">
     </Natvis>
   </ItemGroup>
   <ItemGroup />
   <ItemGroup>
-    <ProjectReference Include="C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\build\ZERO_CHECK.vcxproj">
-      <Project>{368E2055-21E0-3F93-9471-E7A16F620680}</Project>
+    <ProjectReference Include="C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\build\ZERO_CHECK.vcxproj">
+      <Project>{CB4F2238-2DFF-3D70-8CFB-57EC58033B87}</Project>
       <Name>ZERO_CHECK</Name>
       <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
       <CopyToOutputDirectory>Never</CopyToOutputDirectory>

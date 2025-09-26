@@ -1,6 +1,6 @@
-^C:\USERS\EXCALIBUR\DESKTOP\PROJELER\RUST\TCFS\BUILD\CMAKEFILES\3D6F9A49299CDDCBF920417421DD12BA\GENERATE.STAMP.RULE
+^C:\USERS\EXCALIBUR\DESKTOP\PROJELER\C++ REAL PROJECT\CHRONOVAULT\BUILD\CMAKEFILES\29A1FD63C9792DD444AF64950CA27771\GENERATE.STAMP.RULE
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/excalibur/Desktop/Projeler/Rust/tcfs -BC:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/TCFS.sln
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault" "-BC:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/TCFS.sln"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

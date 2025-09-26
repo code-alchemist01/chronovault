@@ -1,3 +1,0 @@
-C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\build\tests\Debug\gtest.dll
-C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\build\tests\Debug\gtest_main.dll
-C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\build\tests\tcfs_tests.dir\Debug\tcfs_tes.6DE91E95.Up2Date

@@ -1,6 +1,6 @@
-^C:\USERS\EXCALIBUR\DESKTOP\PROJELER\RUST\TCFS\TESTS\CMAKELISTS.TXT
+^C:\USERS\EXCALIBUR\DESKTOP\PROJELER\C++ REAL PROJECT\CHRONOVAULT\TESTS\CMAKELISTS.TXT
 setlocal
-"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/excalibur/Desktop/Projeler/Rust/tcfs -BC:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build --check-stamp-file C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/CMakeFiles/generate.stamp
+"C:\Program Files\CMake\bin\cmake.exe" "-SC:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault" "-BC:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build" --check-stamp-file "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/CMakeFiles/generate.stamp"
 if %errorlevel% neq 0 goto :cmEnd
 :cmEnd
 endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone

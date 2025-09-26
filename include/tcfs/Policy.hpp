@@ -83,6 +83,7 @@ public:
     // Serialization
     nlohmann::json to_json() const;
     static Result<Policy> from_json(const nlohmann::json& json);
+    static Result<Policy> from_json(const nlohmann::json& json, bool skip_time_validation);
     
     // Test API compatibility methods for JSON
     std::string toJSON() const { return to_json().dump(); }

@@ -21,250 +21,251 @@ namespace tcfs {
 
 #if TCFS_HAS_OPENSSL
 
-class OpenSSLCryptoProvider : public CryptoProvider {
-private:
+// Implementation class for OpenSSLCryptoProvider
+class OpenSSLCryptoProvider::Impl {
+public:
     void handleOpenSSLError(const std::string& operation) {
         unsigned long err = ERR_get_error();
         char err_buf[256];
         ERR_error_string_n(err, err_buf, sizeof(err_buf));
         throw TCFSException(ErrorCode::CRYPTO_ERROR, operation + ": " + err_buf);
     }
+};
 
-public:
-    OpenSSLCryptoProvider() {
-        // Initialize OpenSSL
-        // Note: In OpenSSL 1.1.0+, initialization is automatic
-        // but we can still call these for compatibility
+OpenSSLCryptoProvider::OpenSSLCryptoProvider() : pimpl_(std::make_unique<Impl>()) {
+    // Initialize OpenSSL
+    // Note: In OpenSSL 1.1.0+, initialization is automatic
+    // but we can still call these for compatibility
+}
+
+OpenSSLCryptoProvider::~OpenSSLCryptoProvider() {
+    // Cleanup is automatic in OpenSSL 1.1.0+
+}
+
+CryptoKey OpenSSLCryptoProvider::generateKey() {
+    CryptoKey key;
+    key.data.resize(32); // AES-256 key size
+    
+    if (RAND_bytes(key.data.data(), static_cast<int>(key.data.size())) != 1) {
+        pimpl_->handleOpenSSLError("Key generation failed");
     }
     
-    ~OpenSSLCryptoProvider() {
-        // Cleanup is automatic in OpenSSL 1.1.0+
+    return key;
+}
+
+CryptoIV OpenSSLCryptoProvider::generateIV() {
+    CryptoIV iv;
+    iv.resize(12); // GCM IV size
+    
+    if (RAND_bytes(iv.data(), static_cast<int>(iv.size())) != 1) {
+        pimpl_->handleOpenSSLError("IV generation failed");
     }
     
-    CryptoKey generateKey() override {
-        CryptoKey key;
-        key.data.resize(32); // AES-256 key size
-        
-        if (RAND_bytes(key.data.data(), static_cast<int>(key.data.size())) != 1) {
-            handleOpenSSLError("Key generation failed");
-        }
-        
-        return key;
-    }
+    return iv;
+}
 
-    CryptoIV generateIV() override {
-        CryptoIV iv;
-        iv.resize(12); // GCM IV size
-        
-        if (RAND_bytes(iv.data(), static_cast<int>(iv.size())) != 1) {
-            handleOpenSSLError("IV generation failed");
-        }
-        
-        return iv;
+CryptoSalt OpenSSLCryptoProvider::generateSalt() {
+    CryptoSalt salt;
+    salt.resize(16);
+    
+    if (RAND_bytes(salt.data(), static_cast<int>(salt.size())) != 1) {
+        pimpl_->handleOpenSSLError("Salt generation failed");
     }
+    
+    return salt;
+}
 
-    CryptoSalt generateSalt() override {
-        CryptoSalt salt;
-        salt.resize(16);
-        
-        if (RAND_bytes(salt.data(), static_cast<int>(salt.size())) != 1) {
-            handleOpenSSLError("Salt generation failed");
-        }
-        
-        return salt;
+CryptoKey OpenSSLCryptoProvider::deriveKey(const std::string& password, const CryptoSalt& salt, const KDFParams& params) {
+    CryptoKey derived_key;
+    derived_key.data.resize(32); // AES-256 key size
+    
+    if (PKCS5_PBKDF2_HMAC(password.c_str(), static_cast<int>(password.length()),
+                          salt.data(), static_cast<int>(salt.size()),
+                          static_cast<int>(params.iterations),
+                          EVP_sha256(),
+                          static_cast<int>(derived_key.data.size()),
+                          derived_key.data.data()) != 1) {
+        pimpl_->handleOpenSSLError("Key derivation failed");
     }
+    
+    return derived_key;
+}
 
-    CryptoKey deriveKey(const std::string& password, const CryptoSalt& salt, const KDFParams& params) override {
-        CryptoKey derived_key;
-        derived_key.data.resize(32); // AES-256 key size
-        
-        if (PKCS5_PBKDF2_HMAC(password.c_str(), static_cast<int>(password.length()),
-                              salt.data(), static_cast<int>(salt.size()),
-                              static_cast<int>(params.iterations),
-                              EVP_sha256(),
-                              static_cast<int>(derived_key.data.size()),
-                              derived_key.data.data()) != 1) {
-            handleOpenSSLError("Key derivation failed");
-        }
-        
-        return derived_key;
+EncryptedData OpenSSLCryptoProvider::encrypt(const std::vector<uint8_t>& plaintext, const CryptoKey& key, const CryptoIV& iv) {
+    EncryptedData result;
+    result.iv = iv; // Set the IV in the result
+    
+    EVP_CIPHER_CTX* ctx = EVP_CIPHER_CTX_new();
+    if (!ctx) {
+        pimpl_->handleOpenSSLError("Failed to create cipher context");
     }
-
-    EncryptedData encrypt(const std::vector<uint8_t>& plaintext, const CryptoKey& key, const CryptoIV& iv) override {
-        EncryptedData result;
-        
-        EVP_CIPHER_CTX* ctx = EVP_CIPHER_CTX_new();
-        if (!ctx) {
-            handleOpenSSLError("Failed to create cipher context");
+    
+    try {
+        if (EVP_EncryptInit_ex(ctx, EVP_aes_256_gcm(), nullptr, key.data.data(), iv.data()) != 1) {
+            pimpl_->handleOpenSSLError("Failed to initialize encryption");
         }
         
-        try {
-            if (EVP_EncryptInit_ex(ctx, EVP_aes_256_gcm(), nullptr, key.data.data(), iv.data()) != 1) {
-                handleOpenSSLError("Failed to initialize encryption");
-            }
-            
-            result.ciphertext.resize(plaintext.size());
-            int len;
-            
-            if (EVP_EncryptUpdate(ctx, result.ciphertext.data(), &len, plaintext.data(), static_cast<int>(plaintext.size())) != 1) {
-                handleOpenSSLError("Failed to encrypt data");
-            }
-            
-            int final_len;
-            if (EVP_EncryptFinal_ex(ctx, result.ciphertext.data() + len, &final_len) != 1) {
-                handleOpenSSLError("Failed to finalize encryption");
-            }
-            
-            result.ciphertext.resize(len + final_len);
-            
-            // Get the tag
-            result.tag.resize(16);
-            if (EVP_CIPHER_CTX_ctrl(ctx, EVP_CTRL_GCM_GET_TAG, 16, result.tag.data()) != 1) {
-                handleOpenSSLError("Failed to get authentication tag");
-            }
-            
-        } catch (...) {
-            EVP_CIPHER_CTX_free(ctx);
-            throw;
+        result.ciphertext.resize(plaintext.size());
+        int len;
+        
+        if (EVP_EncryptUpdate(ctx, result.ciphertext.data(), &len, plaintext.data(), static_cast<int>(plaintext.size())) != 1) {
+            pimpl_->handleOpenSSLError("Failed to encrypt data");
         }
         
+        int final_len;
+        if (EVP_EncryptFinal_ex(ctx, result.ciphertext.data() + len, &final_len) != 1) {
+            pimpl_->handleOpenSSLError("Failed to finalize encryption");
+        }
+        
+        result.ciphertext.resize(len + final_len);
+        
+        // Get the tag
+        result.tag.resize(16);
+        if (EVP_CIPHER_CTX_ctrl(ctx, EVP_CTRL_GCM_GET_TAG, 16, result.tag.data()) != 1) {
+            pimpl_->handleOpenSSLError("Failed to get authentication tag");
+        }
+        
+    } catch (...) {
         EVP_CIPHER_CTX_free(ctx);
-        return result;
+        throw;
     }
+    
+    EVP_CIPHER_CTX_free(ctx);
+    return result;
+}
 
-    std::vector<uint8_t> decrypt(const EncryptedData& encrypted, const CryptoKey& key, const CryptoIV& iv) override {
-        std::vector<uint8_t> plaintext;
-        
-        EVP_CIPHER_CTX* ctx = EVP_CIPHER_CTX_new();
-        if (!ctx) {
-            handleOpenSSLError("Failed to create cipher context");
+std::vector<uint8_t> OpenSSLCryptoProvider::decrypt(const EncryptedData& encrypted, const CryptoKey& key, const CryptoIV& iv) {
+    std::vector<uint8_t> plaintext;
+    
+    EVP_CIPHER_CTX* ctx = EVP_CIPHER_CTX_new();
+    if (!ctx) {
+        pimpl_->handleOpenSSLError("Failed to create cipher context");
+    }
+    
+    try {
+        if (EVP_DecryptInit_ex(ctx, EVP_aes_256_gcm(), nullptr, key.data.data(), iv.data()) != 1) {
+            pimpl_->handleOpenSSLError("Failed to initialize decryption");
         }
         
-        try {
-            if (EVP_DecryptInit_ex(ctx, EVP_aes_256_gcm(), nullptr, key.data.data(), iv.data()) != 1) {
-                handleOpenSSLError("Failed to initialize decryption");
-            }
-            
-            plaintext.resize(encrypted.ciphertext.size());
-            int len;
-            
-            if (EVP_DecryptUpdate(ctx, plaintext.data(), &len, encrypted.ciphertext.data(), static_cast<int>(encrypted.ciphertext.size())) != 1) {
-                handleOpenSSLError("Failed to decrypt data");
-            }
-            
-            // Set the tag
-            if (EVP_CIPHER_CTX_ctrl(ctx, EVP_CTRL_GCM_SET_TAG, static_cast<int>(encrypted.tag.size()), 
-                                   const_cast<uint8_t*>(encrypted.tag.data())) != 1) {
-                handleOpenSSLError("Failed to set authentication tag");
-            }
-            
-            int final_len;
-            if (EVP_DecryptFinal_ex(ctx, plaintext.data() + len, &final_len) != 1) {
-                handleOpenSSLError("Failed to finalize decryption - authentication failed");
-            }
-            
-            plaintext.resize(len + final_len);
-            
-        } catch (...) {
-            EVP_CIPHER_CTX_free(ctx);
-            throw;
+        // Set the tag BEFORE decryption for GCM mode
+        if (EVP_CIPHER_CTX_ctrl(ctx, EVP_CTRL_GCM_SET_TAG, static_cast<int>(encrypted.tag.size()), 
+                               const_cast<uint8_t*>(encrypted.tag.data())) != 1) {
+            pimpl_->handleOpenSSLError("Failed to set authentication tag");
         }
         
+        plaintext.resize(encrypted.ciphertext.size());
+        int len;
+        
+        if (EVP_DecryptUpdate(ctx, plaintext.data(), &len, encrypted.ciphertext.data(), static_cast<int>(encrypted.ciphertext.size())) != 1) {
+            pimpl_->handleOpenSSLError("Failed to decrypt data");
+        }
+        
+        int final_len;
+        if (EVP_DecryptFinal_ex(ctx, plaintext.data() + len, &final_len) != 1) {
+            pimpl_->handleOpenSSLError("Failed to finalize decryption - authentication failed");
+        }
+        
+        plaintext.resize(len + final_len);
+        
+    } catch (...) {
         EVP_CIPHER_CTX_free(ctx);
-        return plaintext;
+        throw;
     }
+    
+    EVP_CIPHER_CTX_free(ctx);
+    return plaintext;
+}
 
-    std::vector<uint8_t> sha256(const std::vector<uint8_t>& data) override {
-        std::vector<uint8_t> hash(32);
-        
-        EVP_MD_CTX* ctx = EVP_MD_CTX_new();
-        if (!ctx) {
-            handleOpenSSLError("Failed to create hash context");
-        }
-        
-        try {
-            if (EVP_DigestInit_ex(ctx, EVP_sha256(), nullptr) != 1) {
-                handleOpenSSLError("Failed to initialize hash");
-            }
-            
-            if (!data.empty()) {
-                if (EVP_DigestUpdate(ctx, data.data(), data.size()) != 1) {
-                    handleOpenSSLError("Failed to update hash");
-                }
-            }
-            
-            unsigned int hash_len;
-            if (EVP_DigestFinal_ex(ctx, hash.data(), &hash_len) != 1) {
-                handleOpenSSLError("Failed to finalize hash");
-            }
-            
-        } catch (...) {
-            EVP_MD_CTX_free(ctx);
-            throw;
-        }
-        
-        EVP_MD_CTX_free(ctx);
-        return hash;
+std::vector<uint8_t> OpenSSLCryptoProvider::sha256(const std::vector<uint8_t>& data) {
+    std::vector<uint8_t> hash(32);
+    
+    EVP_MD_CTX* ctx = EVP_MD_CTX_new();
+    if (!ctx) {
+        pimpl_->handleOpenSSLError("Failed to create hash context");
     }
-
-    std::string toHex(const std::vector<uint8_t>& data) override {
-        std::stringstream ss;
-        ss << std::hex << std::uppercase << std::setfill('0');
-        for (uint8_t byte : data) {
-            ss << std::setw(2) << static_cast<int>(byte);
+    
+    try {
+        if (EVP_DigestInit_ex(ctx, EVP_sha256(), nullptr) != 1) {
+            pimpl_->handleOpenSSLError("Failed to initialize hash");
         }
-        return ss.str();
-    }
-
-    std::vector<uint8_t> fromHex(const std::string& hex) override {
-        std::vector<uint8_t> data;
-        for (size_t i = 0; i < hex.length(); i += 2) {
-            std::string byte_str = hex.substr(i, 2);
-            uint8_t byte = static_cast<uint8_t>(std::stoul(byte_str, nullptr, 16));
-            data.push_back(byte);
-        }
-        return data;
-    }
-
-    std::string toBase64(const std::vector<uint8_t>& data) override {
-        BIO* bio = BIO_new(BIO_s_mem());
-        BIO* b64 = BIO_new(BIO_f_base64());
-        BIO_set_flags(b64, BIO_FLAGS_BASE64_NO_NL);
-        bio = BIO_push(b64, bio);
         
         if (!data.empty()) {
-            BIO_write(bio, data.data(), static_cast<int>(data.size()));
+            if (EVP_DigestUpdate(ctx, data.data(), data.size()) != 1) {
+                pimpl_->handleOpenSSLError("Failed to update hash");
+            }
         }
-        BIO_flush(bio);
         
-        BUF_MEM* buffer_ptr;
-        BIO_get_mem_ptr(bio, &buffer_ptr);
+        unsigned int hash_len;
+        if (EVP_DigestFinal_ex(ctx, hash.data(), &hash_len) != 1) {
+            pimpl_->handleOpenSSLError("Failed to finalize hash");
+        }
         
-        std::string result(buffer_ptr->data, buffer_ptr->length);
-        BIO_free_all(bio);
-        
-        return result;
+    } catch (...) {
+        EVP_MD_CTX_free(ctx);
+        throw;
     }
+    
+    EVP_MD_CTX_free(ctx);
+    return hash;
+}
 
-    std::vector<uint8_t> fromBase64(const std::string& base64) override {
-        BIO* bio = BIO_new_mem_buf(base64.c_str(), static_cast<int>(base64.length()));
-        BIO* b64 = BIO_new(BIO_f_base64());
-        BIO_set_flags(b64, BIO_FLAGS_BASE64_NO_NL);
-        bio = BIO_push(b64, bio);
-        
-        std::vector<uint8_t> result(base64.length());
-        int decoded_length = BIO_read(bio, result.data(), static_cast<int>(result.size()));
-        
-        BIO_free_all(bio);
-        
-        if (decoded_length < 0) {
-            throw TCFSException(ErrorCode::CRYPTO_ERROR, "Base64 decoding failed");
-        }
-        
-        result.resize(decoded_length);
-        return result;
+std::string OpenSSLCryptoProvider::toHex(const std::vector<uint8_t>& data) {
+    std::stringstream ss;
+    ss << std::hex << std::uppercase << std::setfill('0');
+    for (uint8_t byte : data) {
+        ss << std::setw(2) << static_cast<unsigned>(byte);
     }
-};
+    return ss.str();
+}
+
+std::vector<uint8_t> OpenSSLCryptoProvider::fromHex(const std::string& hex) {
+    std::vector<uint8_t> data;
+    for (size_t i = 0; i < hex.length(); i += 2) {
+        std::string byte_str = hex.substr(i, 2);
+        uint8_t byte = static_cast<uint8_t>(std::stoul(byte_str, nullptr, 16));
+        data.push_back(byte);
+    }
+    return data;
+}
+
+std::string OpenSSLCryptoProvider::toBase64(const std::vector<uint8_t>& data) {
+    BIO* bio = BIO_new(BIO_s_mem());
+    BIO* b64 = BIO_new(BIO_f_base64());
+    BIO_set_flags(b64, BIO_FLAGS_BASE64_NO_NL);
+    bio = BIO_push(b64, bio);
+    
+    if (!data.empty()) {
+        BIO_write(bio, data.data(), static_cast<int>(data.size()));
+    }
+    BIO_flush(bio);
+    
+    BUF_MEM* buffer_ptr;
+    BIO_get_mem_ptr(bio, &buffer_ptr);
+    
+    std::string result(buffer_ptr->data, buffer_ptr->length);
+    BIO_free_all(bio);
+    
+    return result;
+}
+
+std::vector<uint8_t> OpenSSLCryptoProvider::fromBase64(const std::string& base64) {
+    BIO* bio = BIO_new_mem_buf(base64.c_str(), static_cast<int>(base64.length()));
+    BIO* b64 = BIO_new(BIO_f_base64());
+    BIO_set_flags(b64, BIO_FLAGS_BASE64_NO_NL);
+    bio = BIO_push(b64, bio);
+    
+    std::vector<uint8_t> result(base64.length());
+    int decoded_length = BIO_read(bio, result.data(), static_cast<int>(result.size()));
+    
+    BIO_free_all(bio);
+    
+    if (decoded_length < 0) {
+        throw TCFSException(ErrorCode::CRYPTO_ERROR, "Base64 decoding failed");
+    }
+    
+    result.resize(decoded_length);
+    return result;
+}
 
 #else
 
@@ -371,9 +372,9 @@ public:
 
     std::string toHex(const std::vector<uint8_t>& data) override {
         std::stringstream ss;
-        ss << std::hex << std::uppercase << std::setfill('0');
+        ss << std::hex << std::setfill('0');
         for (uint8_t byte : data) {
-            ss << std::setw(2) << static_cast<int>(byte);
+            ss << std::setw(2) << static_cast<unsigned>(byte);
         }
         return ss.str();
     }

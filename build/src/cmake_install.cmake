@@ -1,4 +1,4 @@
-# Install script for directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/src
+# Install script for directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/src
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)
@@ -34,17 +34,17 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/libtcfs/cmake_install.cmake")
+  include("C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/src/libtcfs/cmake_install.cmake")
 endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/cli/cmake_install.cmake")
+  include("C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/src/cli/cmake_install.cmake")
 endif()
 
 string(REPLACE ";" "\n" CMAKE_INSTALL_MANIFEST_CONTENT
        "${CMAKE_INSTALL_MANIFEST_FILES}")
 if(CMAKE_INSTALL_LOCAL_ONLY)
-  file(WRITE "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/src/install_local_manifest.txt"
+  file(WRITE "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/src/install_local_manifest.txt"
      "${CMAKE_INSTALL_MANIFEST_CONTENT}")
 endif()

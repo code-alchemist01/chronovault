@@ -1,544 +1,932 @@
-Start testing: Sep 26 15:20 T�rkiye Standart Saati
+Start testing: Sep 26 20:49 T�rkiye Standart Saati
 ----------------------------------------------------------
-1/32 Testing: @èûUû.DefaultConstruction
-1/32 Test: @èûUû.DefaultConstruction
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=@èûUû.DefaultConstruction" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"@èûUû.DefaultConstruction" start time: Sep 26 15:20 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =   6.14 sec
-----------------------------------------------------------
-Test Failed.
-"@èûUû.DefaultConstruction" end time: Sep 26 15:20 T�rkiye Standart Saati
-"@èûUû.DefaultConstruction" time elapsed: 00:00:06
-----------------------------------------------------------
-
-2/32 Testing: .SetAndGetUnlockTime
-2/32 Test: .SetAndGetUnlockTime
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=.SetAndGetUnlockTime" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-".SetAndGetUnlockTime" start time: Sep 26 15:20 T�rkiye Standart Saati
+1/32 Testing: PolicyTest.DefaultConstruction
+1/32 Test: PolicyTest.DefaultConstruction
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=PolicyTest.DefaultConstruction" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"PolicyTest.DefaultConstruction" start time: Sep 26 20:49 T�rkiye Standart Saati
 Output:
 ----------------------------------------------------------
 Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
-Note: Google Test filter = .SetAndGetUnlockTime
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
-<end of output>
-Test time =   0.03 sec
-----------------------------------------------------------
-Test Passed.
-".SetAndGetUnlockTime" end time: Sep 26 15:20 T�rkiye Standart Saati
-".SetAndGetUnlockTime" time elapsed: 00:00:00
-----------------------------------------------------------
+Note: Google Test filter = PolicyTest.DefaultConstruction
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.DefaultConstruction
+[       OK ] PolicyTest.DefaultConstruction (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
 
-3/32 Testing: PäûUû.IsUnlockTimeReached
-3/32 Test: PäûUû.IsUnlockTimeReached
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=PäûUû.IsUnlockTimeReached" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"PäûUû.IsUnlockTimeReached" start time: Sep 26 15:20 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =   5.43 sec
-----------------------------------------------------------
-Test Failed.
-"PäûUû.IsUnlockTimeReached" end time: Sep 26 15:20 T�rkiye Standart Saati
-"PäûUû.IsUnlockTimeReached" time elapsed: 00:00:05
-----------------------------------------------------------
-
-4/32 Testing: ÇåûUû.SetAndGetOwner
-4/32 Test: ÇåûUû.SetAndGetOwner
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=ÇåûUû.SetAndGetOwner" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"ÇåûUû.SetAndGetOwner" start time: Sep 26 15:20 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
-Note: Google Test filter = ���U�.SetAndGetOwner
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
 <end of output>
 Test time =   0.05 sec
 ----------------------------------------------------------
 Test Passed.
-"ÇåûUû.SetAndGetOwner" end time: Sep 26 15:20 T�rkiye Standart Saati
-"ÇåûUû.SetAndGetOwner" time elapsed: 00:00:00
+"PolicyTest.DefaultConstruction" end time: Sep 26 20:49 T�rkiye Standart Saati
+"PolicyTest.DefaultConstruction" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-5/32 Testing: ­ûUû.SetAndGetLabel
-5/32 Test: ­ûUû.SetAndGetLabel
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=­ûUû.SetAndGetLabel" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"­ûUû.SetAndGetLabel" start time: Sep 26 15:20 T�rkiye Standart Saati
+2/32 Testing: PolicyTest.SetAndGetUnlockTime
+2/32 Test: PolicyTest.SetAndGetUnlockTime
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=PolicyTest.SetAndGetUnlockTime" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"PolicyTest.SetAndGetUnlockTime" start time: Sep 26 20:49 T�rkiye Standart Saati
 Output:
 ----------------------------------------------------------
 Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
-Note: Google Test filter = ��U�.SetAndGetLabel
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
+Note: Google Test filter = PolicyTest.SetAndGetUnlockTime
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.SetAndGetUnlockTime
+[       OK ] PolicyTest.SetAndGetUnlockTime (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
 <end of output>
 Test time =   0.05 sec
 ----------------------------------------------------------
 Test Passed.
-"­ûUû.SetAndGetLabel" end time: Sep 26 15:20 T�rkiye Standart Saati
-"­ûUû.SetAndGetLabel" time elapsed: 00:00:00
+"PolicyTest.SetAndGetUnlockTime" end time: Sep 26 20:49 T�rkiye Standart Saati
+"PolicyTest.SetAndGetUnlockTime" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-6/32 Testing: 0ïûUû.SetAndGetNotes
-6/32 Test: 0ïûUû.SetAndGetNotes
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=0ïûUû.SetAndGetNotes" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"0ïûUû.SetAndGetNotes" start time: Sep 26 15:20 T�rkiye Standart Saati
+3/32 Testing: PolicyTest.IsUnlockTimeReached
+3/32 Test: PolicyTest.IsUnlockTimeReached
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=PolicyTest.IsUnlockTimeReached" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"PolicyTest.IsUnlockTimeReached" start time: Sep 26 20:49 T�rkiye Standart Saati
 Output:
 ----------------------------------------------------------
 Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
-Note: Google Test filter = 0��U�.SetAndGetNotes
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
-<end of output>
-Test time =   0.05 sec
-----------------------------------------------------------
-Test Passed.
-"0ïûUû.SetAndGetNotes" end time: Sep 26 15:20 T�rkiye Standart Saati
-"0ïûUû.SetAndGetNotes" time elapsed: 00:00:00
-----------------------------------------------------------
+Note: Google Test filter = PolicyTest.IsUnlockTimeReached
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.IsUnlockTimeReached
+[       OK ] PolicyTest.IsUnlockTimeReached (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
 
-7/32 Testing: áb£Uû.SetAndGetGracePeriod
-7/32 Test: áb£Uû.SetAndGetGracePeriod
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=áb£Uû.SetAndGetGracePeriod" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"áb£Uû.SetAndGetGracePeriod" start time: Sep 26 15:20 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =   5.40 sec
-----------------------------------------------------------
-Test Failed.
-"áb£Uû.SetAndGetGracePeriod" end time: Sep 26 15:20 T�rkiye Standart Saati
-"áb£Uû.SetAndGetGracePeriod" time elapsed: 00:00:05
-----------------------------------------------------------
-
-8/32 Testing: á]£Uû.SetAndGetAlgorithm
-8/32 Test: á]£Uû.SetAndGetAlgorithm
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=á__csb£Uû.SetAndGetAlgorithm" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"á]£Uû.SetAndGetAlgorithm" start time: Sep 26 15:20 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =   5.48 sec
-----------------------------------------------------------
-Test Failed.
-"á]£Uû.SetAndGetAlgorithm" end time: Sep 26 15:20 T�rkiye Standart Saati
-"á]£Uû.SetAndGetAlgorithm" time elapsed: 00:00:05
-----------------------------------------------------------
-
-9/32 Testing: `a£Uû.SetAndGetKDFType
-9/32 Test: `a£Uû.SetAndGetKDFType
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=`a£Uû.SetAndGetKDFType" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"`a£Uû.SetAndGetKDFType" start time: Sep 26 15:20 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =   5.50 sec
-----------------------------------------------------------
-Test Failed.
-"`a£Uû.SetAndGetKDFType" end time: Sep 26 15:20 T�rkiye Standart Saati
-"`a£Uû.SetAndGetKDFType" time elapsed: 00:00:05
-----------------------------------------------------------
-
-10/32 Testing: ░\£Uû.JSONSerialization
-10/32 Test: ░\£Uû.JSONSerialization
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=░\£Uû.JSONSerialization" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"░\£Uû.JSONSerialization" start time: Sep 26 15:20 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =  21.85 sec
-----------------------------------------------------------
-Test Failed.
-"░\£Uû.JSONSerialization" end time: Sep 26 15:20 T�rkiye Standart Saati
-"░\£Uû.JSONSerialization" time elapsed: 00:00:21
-----------------------------------------------------------
-
-11/32 Testing: Çd£Uû.Validation
-11/32 Test: Çd£Uû.Validation
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=Çd£Uû.Validation" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"Çd£Uû.Validation" start time: Sep 26 15:20 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
-Note: Google Test filter = �d�U�.Validation
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
-<end of output>
-Test time =   0.07 sec
-----------------------------------------------------------
-Test Passed.
-"Çd£Uû.Validation" end time: Sep 26 15:20 T�rkiye Standart Saati
-"Çd£Uû.Validation" time elapsed: 00:00:00
-----------------------------------------------------------
-
-12/32 Testing: 0Z£Uû.KeyGeneration
-12/32 Test: 0Z£Uû.KeyGeneration
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=0Z£Uû.KeyGeneration" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"0Z£Uû.KeyGeneration" start time: Sep 26 15:20 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
-Note: Google Test filter = 0Z�U�.KeyGeneration
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
-<end of output>
-Test time =   0.07 sec
-----------------------------------------------------------
-Test Passed.
-"0Z£Uû.KeyGeneration" end time: Sep 26 15:20 T�rkiye Standart Saati
-"0Z£Uû.KeyGeneration" time elapsed: 00:00:00
-----------------------------------------------------------
-
-13/32 Testing: a£Uû.IVGeneration
-13/32 Test: a£Uû.IVGeneration
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=a£Uû.IVGeneration" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"a£Uû.IVGeneration" start time: Sep 26 15:20 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
-Note: Google Test filter = a�U�.IVGeneration
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
-<end of output>
-Test time =   0.08 sec
-----------------------------------------------------------
-Test Passed.
-"a£Uû.IVGeneration" end time: Sep 26 15:20 T�rkiye Standart Saati
-"a£Uû.IVGeneration" time elapsed: 00:00:00
-----------------------------------------------------------
-
-14/32 Testing: Éc£Uû.SaltGeneration
-14/32 Test: Éc£Uû.SaltGeneration
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=Éc£Uû.SaltGeneration" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"Éc£Uû.SaltGeneration" start time: Sep 26 15:20 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =   6.00 sec
-----------------------------------------------------------
-Test Failed.
-"Éc£Uû.SaltGeneration" end time: Sep 26 15:20 T�rkiye Standart Saati
-"Éc£Uû.SaltGeneration" time elapsed: 00:00:06
-----------------------------------------------------------
-
-15/32 Testing: 0_£Uû.KeyDerivation
-15/32 Test: 0_£Uû.KeyDerivation
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=0_£Uû.KeyDerivation" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"0_£Uû.KeyDerivation" start time: Sep 26 15:20 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
-Note: Google Test filter = 0_�U�.KeyDerivation
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
-<end of output>
-Test time =   0.05 sec
-----------------------------------------------------------
-Test Passed.
-"0_£Uû.KeyDerivation" end time: Sep 26 15:20 T�rkiye Standart Saati
-"0_£Uû.KeyDerivation" time elapsed: 00:00:00
-----------------------------------------------------------
-
-16/32 Testing: .EncryptionDecryption
-16/32 Test: .EncryptionDecryption
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=.EncryptionDecryption" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-".EncryptionDecryption" start time: Sep 26 15:20 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
-Note: Google Test filter = .EncryptionDecryption
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
-<end of output>
-Test time =   0.05 sec
-----------------------------------------------------------
-Test Passed.
-".EncryptionDecryption" end time: Sep 26 15:20 T�rkiye Standart Saati
-".EncryptionDecryption" time elapsed: 00:00:00
-----------------------------------------------------------
-
-17/32 Testing: ág£Uû.EncryptionWithWrongKey
-17/32 Test: ág£Uû.EncryptionWithWrongKey
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=ág£Uû.EncryptionWithWrongKey" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"ág£Uû.EncryptionWithWrongKey" start time: Sep 26 15:20 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =   6.18 sec
-----------------------------------------------------------
-Test Failed.
-"ág£Uû.EncryptionWithWrongKey" end time: Sep 26 15:21 T�rkiye Standart Saati
-"ág£Uû.EncryptionWithWrongKey" time elapsed: 00:00:06
-----------------------------------------------------------
-
-18/32 Testing: Pg£Uû.SHA256Hashing
-18/32 Test: Pg£Uû.SHA256Hashing
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=Pg£Uû.SHA256Hashing" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"Pg£Uû.SHA256Hashing" start time: Sep 26 15:21 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
-Note: Google Test filter = Pg�U�.SHA256Hashing
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
-<end of output>
-Test time =   0.08 sec
-----------------------------------------------------------
-Test Passed.
-"Pg£Uû.SHA256Hashing" end time: Sep 26 15:21 T�rkiye Standart Saati
-"Pg£Uû.SHA256Hashing" time elapsed: 00:00:00
-----------------------------------------------------------
-
-19/32 Testing: pe£Uû.HexConversion
-19/32 Test: pe£Uû.HexConversion
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=pe£Uû.HexConversion" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"pe£Uû.HexConversion" start time: Sep 26 15:21 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
-Note: Google Test filter = pe�U�.HexConversion
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
-<end of output>
-Test time =   0.03 sec
-----------------------------------------------------------
-Test Passed.
-"pe£Uû.HexConversion" end time: Sep 26 15:21 T�rkiye Standart Saati
-"pe£Uû.HexConversion" time elapsed: 00:00:00
-----------------------------------------------------------
-
-20/32 Testing: `f£Uû.Base64Conversion
-20/32 Test: `f£Uû.Base64Conversion
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=`f£Uû.Base64Conversion" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"`f£Uû.Base64Conversion" start time: Sep 26 15:21 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =  16.45 sec
-----------------------------------------------------------
-Test Failed.
-"`f£Uû.Base64Conversion" end time: Sep 26 15:21 T�rkiye Standart Saati
-"`f£Uû.Base64Conversion" time elapsed: 00:00:16
-----------------------------------------------------------
-
-21/32 Testing: ÇZ£Uû.EmptyDataHandling
-21/32 Test: ÇZ£Uû.EmptyDataHandling
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=ÇZ£Uû.EmptyDataHandling" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"ÇZ£Uû.EmptyDataHandling" start time: Sep 26 15:21 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =   5.94 sec
-----------------------------------------------------------
-Test Failed.
-"ÇZ£Uû.EmptyDataHandling" end time: Sep 26 15:21 T�rkiye Standart Saati
-"ÇZ£Uû.EmptyDataHandling" time elapsed: 00:00:05
-----------------------------------------------------------
-
-22/32 Testing: @Y£Uû.ErrorCodeToString
-22/32 Test: @Y£Uû.ErrorCodeToString
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=@Y£Uû.ErrorCodeToString" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"@Y£Uû.ErrorCodeToString" start time: Sep 26 15:21 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =   5.80 sec
-----------------------------------------------------------
-Test Failed.
-"@Y£Uû.ErrorCodeToString" end time: Sep 26 15:21 T�rkiye Standart Saati
-"@Y£Uû.ErrorCodeToString" time elapsed: 00:00:05
-----------------------------------------------------------
-
-23/32 Testing: ºZ£Uû.TCFSExceptionConstruction
-23/32 Test: ºZ£Uû.TCFSExceptionConstruction
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=ºZ£Uû.TCFSExceptionConstruction" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"ºZ£Uû.TCFSExceptionConstruction" start time: Sep 26 15:21 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =   5.76 sec
-----------------------------------------------------------
-Test Failed.
-"ºZ£Uû.TCFSExceptionConstruction" end time: Sep 26 15:21 T�rkiye Standart Saati
-"ºZ£Uû.TCFSExceptionConstruction" time elapsed: 00:00:05
-----------------------------------------------------------
-
-24/32 Testing:  µúUû.TCFSExceptionWithoutMessage
-24/32 Test:  µúUû.TCFSExceptionWithoutMessage
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter= µúUû.TCFSExceptionWithoutMessage" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-" µúUû.TCFSExceptionWithoutMessage" start time: Sep 26 15:21 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =   5.70 sec
-----------------------------------------------------------
-Test Failed.
-" µúUû.TCFSExceptionWithoutMessage" end time: Sep 26 15:21 T�rkiye Standart Saati
-" µúUû.TCFSExceptionWithoutMessage" time elapsed: 00:00:05
-----------------------------------------------------------
-
-25/32 Testing: @¯úUû.ResultSuccess
-25/32 Test: @¯úUû.ResultSuccess
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=@¯úUû.ResultSuccess" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"@¯úUû.ResultSuccess" start time: Sep 26 15:21 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =   5.53 sec
-----------------------------------------------------------
-Test Failed.
-"@¯úUû.ResultSuccess" end time: Sep 26 15:21 T�rkiye Standart Saati
-"@¯úUû.ResultSuccess" time elapsed: 00:00:05
-----------------------------------------------------------
-
-26/32 Testing: Ó¯úUû.ResultError
-26/32 Test: Ó¯úUû.ResultError
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=Ó¯úUû.ResultError" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"Ó¯úUû.ResultError" start time: Sep 26 15:21 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
-Note: Google Test filter = ӯ�U�.ResultError
-[==========] Running 0 tests from 0 test suites.
-[==========] 0 tests from 0 test suites ran. (0 ms total)
-[  PASSED  ] 0 tests.
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
 <end of output>
 Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"Ó¯úUû.ResultError" end time: Sep 26 15:21 T�rkiye Standart Saati
-"Ó¯úUû.ResultError" time elapsed: 00:00:00
+"PolicyTest.IsUnlockTimeReached" end time: Sep 26 20:49 T�rkiye Standart Saati
+"PolicyTest.IsUnlockTimeReached" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-27/32 Testing: úUû.ResultVoidSuccess
-27/32 Test: úUû.ResultVoidSuccess
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=úUû.ResultVoidSuccess" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"úUû.ResultVoidSuccess" start time: Sep 26 15:21 T�rkiye Standart Saati
+4/32 Testing: PolicyTest.SetAndGetOwner
+4/32 Test: PolicyTest.SetAndGetOwner
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=PolicyTest.SetAndGetOwner" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"PolicyTest.SetAndGetOwner" start time: Sep 26 20:49 T�rkiye Standart Saati
 Output:
 ----------------------------------------------------------
-<end of output>
-Test time =   5.65 sec
-----------------------------------------------------------
-Test Failed.
-"úUû.ResultVoidSuccess" end time: Sep 26 15:21 T�rkiye Standart Saati
-"úUû.ResultVoidSuccess" time elapsed: 00:00:05
-----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = PolicyTest.SetAndGetOwner
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.SetAndGetOwner
+[       OK ] PolicyTest.SetAndGetOwner (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
 
-28/32 Testing: `úUû.ResultVoidError
-28/32 Test: `úUû.ResultVoidError
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=`úUû.ResultVoidError" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"`úUû.ResultVoidError" start time: Sep 26 15:21 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
 <end of output>
-Test time =   6.65 sec
-----------------------------------------------------------
-Test Failed.
-"`úUû.ResultVoidError" end time: Sep 26 15:22 T�rkiye Standart Saati
-"`úUû.ResultVoidError" time elapsed: 00:00:06
-----------------------------------------------------------
-
-29/32 Testing:  ßúUû.ResultMoveSemantics
-29/32 Test:  ßúUû.ResultMoveSemantics
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter= ßúUû.ResultMoveSemantics" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-" ßúUû.ResultMoveSemantics" start time: Sep 26 15:22 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =   5.92 sec
-----------------------------------------------------------
-Test Failed.
-" ßúUû.ResultMoveSemantics" end time: Sep 26 15:22 T�rkiye Standart Saati
-" ßúUû.ResultMoveSemantics" time elapsed: 00:00:05
-----------------------------------------------------------
-
-30/32 Testing: É¯úUû.ResultCopySemantics
-30/32 Test: É¯úUû.ResultCopySemantics
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=É¯úUû.ResultCopySemantics" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"É¯úUû.ResultCopySemantics" start time: Sep 26 15:22 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =   6.19 sec
-----------------------------------------------------------
-Test Failed.
-"É¯úUû.ResultCopySemantics" end time: Sep 26 15:22 T�rkiye Standart Saati
-"É¯úUû.ResultCopySemantics" time elapsed: 00:00:06
-----------------------------------------------------------
-
-31/32 Testing: ░úUû.ResultErrorWithoutMessage
-31/32 Test: ░úUû.ResultErrorWithoutMessage
-Command: "C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests/Debug/tcfs_tests.exe" "--gtest_filter=░úUû.ResultErrorWithoutMessage" "--gtest_also_run_disabled_tests"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"░úUû.ResultErrorWithoutMessage" start time: Sep 26 15:22 T�rkiye Standart Saati
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =   6.30 sec
-----------------------------------------------------------
-Test Failed.
-"░úUû.ResultErrorWithoutMessage" end time: Sep 26 15:22 T�rkiye Standart Saati
-"░úUû.ResultErrorWithoutMessage" time elapsed: 00:00:06
-----------------------------------------------------------
-
-Test not available without configuration.  (Missing "-C <config>"?)
-32/32 Testing: tcfs_unit_tests
-32/32 Test: tcfs_unit_tests
-Command: "NOT_AVAILABLE"
-Directory: C:/Users/excalibur/Desktop/Projeler/Rust/tcfs/build/tests
-"tcfs_unit_tests" start time: 
-Output:
-----------------------------------------------------------
-<end of output>
-Test time =   0.00 sec
+Test time =   0.04 sec
 ----------------------------------------------------------
 Test Passed.
-"tcfs_unit_tests" end time: Sep 26 15:22 T�rkiye Standart Saati
+"PolicyTest.SetAndGetOwner" end time: Sep 26 20:49 T�rkiye Standart Saati
+"PolicyTest.SetAndGetOwner" time elapsed: 00:00:00
+----------------------------------------------------------
+
+5/32 Testing: PolicyTest.SetAndGetLabel
+5/32 Test: PolicyTest.SetAndGetLabel
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=PolicyTest.SetAndGetLabel" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"PolicyTest.SetAndGetLabel" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = PolicyTest.SetAndGetLabel
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.SetAndGetLabel
+[       OK ] PolicyTest.SetAndGetLabel (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"PolicyTest.SetAndGetLabel" end time: Sep 26 20:49 T�rkiye Standart Saati
+"PolicyTest.SetAndGetLabel" time elapsed: 00:00:00
+----------------------------------------------------------
+
+6/32 Testing: PolicyTest.SetAndGetNotes
+6/32 Test: PolicyTest.SetAndGetNotes
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=PolicyTest.SetAndGetNotes" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"PolicyTest.SetAndGetNotes" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = PolicyTest.SetAndGetNotes
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.SetAndGetNotes
+[       OK ] PolicyTest.SetAndGetNotes (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"PolicyTest.SetAndGetNotes" end time: Sep 26 20:49 T�rkiye Standart Saati
+"PolicyTest.SetAndGetNotes" time elapsed: 00:00:00
+----------------------------------------------------------
+
+7/32 Testing: PolicyTest.SetAndGetGracePeriod
+7/32 Test: PolicyTest.SetAndGetGracePeriod
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=PolicyTest.SetAndGetGracePeriod" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"PolicyTest.SetAndGetGracePeriod" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = PolicyTest.SetAndGetGracePeriod
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.SetAndGetGracePeriod
+[       OK ] PolicyTest.SetAndGetGracePeriod (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"PolicyTest.SetAndGetGracePeriod" end time: Sep 26 20:49 T�rkiye Standart Saati
+"PolicyTest.SetAndGetGracePeriod" time elapsed: 00:00:00
+----------------------------------------------------------
+
+8/32 Testing: PolicyTest.SetAndGetAlgorithm
+8/32 Test: PolicyTest.SetAndGetAlgorithm
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=PolicyTest.SetAndGetAlgorithm" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"PolicyTest.SetAndGetAlgorithm" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = PolicyTest.SetAndGetAlgorithm
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.SetAndGetAlgorithm
+[       OK ] PolicyTest.SetAndGetAlgorithm (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"PolicyTest.SetAndGetAlgorithm" end time: Sep 26 20:49 T�rkiye Standart Saati
+"PolicyTest.SetAndGetAlgorithm" time elapsed: 00:00:00
+----------------------------------------------------------
+
+9/32 Testing: PolicyTest.SetAndGetKDFType
+9/32 Test: PolicyTest.SetAndGetKDFType
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=PolicyTest.SetAndGetKDFType" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"PolicyTest.SetAndGetKDFType" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = PolicyTest.SetAndGetKDFType
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.SetAndGetKDFType
+[       OK ] PolicyTest.SetAndGetKDFType (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"PolicyTest.SetAndGetKDFType" end time: Sep 26 20:49 T�rkiye Standart Saati
+"PolicyTest.SetAndGetKDFType" time elapsed: 00:00:00
+----------------------------------------------------------
+
+10/32 Testing: PolicyTest.JSONSerialization
+10/32 Test: PolicyTest.JSONSerialization
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=PolicyTest.JSONSerialization" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"PolicyTest.JSONSerialization" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = PolicyTest.JSONSerialization
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.JSONSerialization
+[       OK ] PolicyTest.JSONSerialization (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"PolicyTest.JSONSerialization" end time: Sep 26 20:49 T�rkiye Standart Saati
+"PolicyTest.JSONSerialization" time elapsed: 00:00:00
+----------------------------------------------------------
+
+11/32 Testing: PolicyTest.Validation
+11/32 Test: PolicyTest.Validation
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=PolicyTest.Validation" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"PolicyTest.Validation" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = PolicyTest.Validation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from PolicyTest
+[ RUN      ] PolicyTest.Validation
+[       OK ] PolicyTest.Validation (0 ms)
+[----------] 1 test from PolicyTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"PolicyTest.Validation" end time: Sep 26 20:49 T�rkiye Standart Saati
+"PolicyTest.Validation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+12/32 Testing: CryptoTest.KeyGeneration
+12/32 Test: CryptoTest.KeyGeneration
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=CryptoTest.KeyGeneration" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"CryptoTest.KeyGeneration" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = CryptoTest.KeyGeneration
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CryptoTest
+[ RUN      ] CryptoTest.KeyGeneration
+[       OK ] CryptoTest.KeyGeneration (7 ms)
+[----------] 1 test from CryptoTest (7 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (8 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"CryptoTest.KeyGeneration" end time: Sep 26 20:49 T�rkiye Standart Saati
+"CryptoTest.KeyGeneration" time elapsed: 00:00:00
+----------------------------------------------------------
+
+13/32 Testing: CryptoTest.IVGeneration
+13/32 Test: CryptoTest.IVGeneration
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=CryptoTest.IVGeneration" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"CryptoTest.IVGeneration" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = CryptoTest.IVGeneration
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CryptoTest
+[ RUN      ] CryptoTest.IVGeneration
+[       OK ] CryptoTest.IVGeneration (8 ms)
+[----------] 1 test from CryptoTest (8 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (8 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"CryptoTest.IVGeneration" end time: Sep 26 20:49 T�rkiye Standart Saati
+"CryptoTest.IVGeneration" time elapsed: 00:00:00
+----------------------------------------------------------
+
+14/32 Testing: CryptoTest.SaltGeneration
+14/32 Test: CryptoTest.SaltGeneration
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=CryptoTest.SaltGeneration" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"CryptoTest.SaltGeneration" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = CryptoTest.SaltGeneration
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CryptoTest
+[ RUN      ] CryptoTest.SaltGeneration
+[       OK ] CryptoTest.SaltGeneration (10 ms)
+[----------] 1 test from CryptoTest (10 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (11 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.06 sec
+----------------------------------------------------------
+Test Passed.
+"CryptoTest.SaltGeneration" end time: Sep 26 20:49 T�rkiye Standart Saati
+"CryptoTest.SaltGeneration" time elapsed: 00:00:00
+----------------------------------------------------------
+
+15/32 Testing: CryptoTest.KeyDerivation
+15/32 Test: CryptoTest.KeyDerivation
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=CryptoTest.KeyDerivation" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"CryptoTest.KeyDerivation" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = CryptoTest.KeyDerivation
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CryptoTest
+[ RUN      ] CryptoTest.KeyDerivation
+[       OK ] CryptoTest.KeyDerivation (96 ms)
+[----------] 1 test from CryptoTest (96 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (96 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.14 sec
+----------------------------------------------------------
+Test Passed.
+"CryptoTest.KeyDerivation" end time: Sep 26 20:49 T�rkiye Standart Saati
+"CryptoTest.KeyDerivation" time elapsed: 00:00:00
+----------------------------------------------------------
+
+16/32 Testing: CryptoTest.EncryptionDecryption
+16/32 Test: CryptoTest.EncryptionDecryption
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=CryptoTest.EncryptionDecryption" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"CryptoTest.EncryptionDecryption" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = CryptoTest.EncryptionDecryption
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CryptoTest
+[ RUN      ] CryptoTest.EncryptionDecryption
+[       OK ] CryptoTest.EncryptionDecryption (12 ms)
+[----------] 1 test from CryptoTest (12 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (12 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"CryptoTest.EncryptionDecryption" end time: Sep 26 20:49 T�rkiye Standart Saati
+"CryptoTest.EncryptionDecryption" time elapsed: 00:00:00
+----------------------------------------------------------
+
+17/32 Testing: CryptoTest.EncryptionWithWrongKey
+17/32 Test: CryptoTest.EncryptionWithWrongKey
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=CryptoTest.EncryptionWithWrongKey" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"CryptoTest.EncryptionWithWrongKey" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = CryptoTest.EncryptionWithWrongKey
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CryptoTest
+[ RUN      ] CryptoTest.EncryptionWithWrongKey
+[       OK ] CryptoTest.EncryptionWithWrongKey (15 ms)
+[----------] 1 test from CryptoTest (15 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (15 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.07 sec
+----------------------------------------------------------
+Test Passed.
+"CryptoTest.EncryptionWithWrongKey" end time: Sep 26 20:49 T�rkiye Standart Saati
+"CryptoTest.EncryptionWithWrongKey" time elapsed: 00:00:00
+----------------------------------------------------------
+
+18/32 Testing: CryptoTest.SHA256Hashing
+18/32 Test: CryptoTest.SHA256Hashing
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=CryptoTest.SHA256Hashing" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"CryptoTest.SHA256Hashing" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = CryptoTest.SHA256Hashing
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CryptoTest
+[ RUN      ] CryptoTest.SHA256Hashing
+[       OK ] CryptoTest.SHA256Hashing (1 ms)
+[----------] 1 test from CryptoTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (2 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"CryptoTest.SHA256Hashing" end time: Sep 26 20:49 T�rkiye Standart Saati
+"CryptoTest.SHA256Hashing" time elapsed: 00:00:00
+----------------------------------------------------------
+
+19/32 Testing: CryptoTest.HexConversion
+19/32 Test: CryptoTest.HexConversion
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=CryptoTest.HexConversion" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"CryptoTest.HexConversion" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = CryptoTest.HexConversion
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CryptoTest
+[ RUN      ] CryptoTest.HexConversion
+[       OK ] CryptoTest.HexConversion (0 ms)
+[----------] 1 test from CryptoTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"CryptoTest.HexConversion" end time: Sep 26 20:49 T�rkiye Standart Saati
+"CryptoTest.HexConversion" time elapsed: 00:00:00
+----------------------------------------------------------
+
+20/32 Testing: CryptoTest.Base64Conversion
+20/32 Test: CryptoTest.Base64Conversion
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=CryptoTest.Base64Conversion" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"CryptoTest.Base64Conversion" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = CryptoTest.Base64Conversion
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CryptoTest
+[ RUN      ] CryptoTest.Base64Conversion
+[       OK ] CryptoTest.Base64Conversion (0 ms)
+[----------] 1 test from CryptoTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"CryptoTest.Base64Conversion" end time: Sep 26 20:49 T�rkiye Standart Saati
+"CryptoTest.Base64Conversion" time elapsed: 00:00:00
+----------------------------------------------------------
+
+21/32 Testing: CryptoTest.EmptyDataHandling
+21/32 Test: CryptoTest.EmptyDataHandling
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=CryptoTest.EmptyDataHandling" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"CryptoTest.EmptyDataHandling" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = CryptoTest.EmptyDataHandling
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from CryptoTest
+[ RUN      ] CryptoTest.EmptyDataHandling
+[       OK ] CryptoTest.EmptyDataHandling (1 ms)
+[----------] 1 test from CryptoTest (1 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (1 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"CryptoTest.EmptyDataHandling" end time: Sep 26 20:49 T�rkiye Standart Saati
+"CryptoTest.EmptyDataHandling" time elapsed: 00:00:00
+----------------------------------------------------------
+
+22/32 Testing: ErrorsTest.ErrorCodeToString
+22/32 Test: ErrorsTest.ErrorCodeToString
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=ErrorsTest.ErrorCodeToString" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"ErrorsTest.ErrorCodeToString" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = ErrorsTest.ErrorCodeToString
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ErrorsTest
+[ RUN      ] ErrorsTest.ErrorCodeToString
+[       OK ] ErrorsTest.ErrorCodeToString (0 ms)
+[----------] 1 test from ErrorsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ErrorsTest.ErrorCodeToString" end time: Sep 26 20:49 T�rkiye Standart Saati
+"ErrorsTest.ErrorCodeToString" time elapsed: 00:00:00
+----------------------------------------------------------
+
+23/32 Testing: ErrorsTest.TCFSExceptionConstruction
+23/32 Test: ErrorsTest.TCFSExceptionConstruction
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=ErrorsTest.TCFSExceptionConstruction" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"ErrorsTest.TCFSExceptionConstruction" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = ErrorsTest.TCFSExceptionConstruction
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ErrorsTest
+[ RUN      ] ErrorsTest.TCFSExceptionConstruction
+[       OK ] ErrorsTest.TCFSExceptionConstruction (0 ms)
+[----------] 1 test from ErrorsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ErrorsTest.TCFSExceptionConstruction" end time: Sep 26 20:49 T�rkiye Standart Saati
+"ErrorsTest.TCFSExceptionConstruction" time elapsed: 00:00:00
+----------------------------------------------------------
+
+24/32 Testing: ErrorsTest.TCFSExceptionWithoutMessage
+24/32 Test: ErrorsTest.TCFSExceptionWithoutMessage
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=ErrorsTest.TCFSExceptionWithoutMessage" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"ErrorsTest.TCFSExceptionWithoutMessage" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = ErrorsTest.TCFSExceptionWithoutMessage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ErrorsTest
+[ RUN      ] ErrorsTest.TCFSExceptionWithoutMessage
+[       OK ] ErrorsTest.TCFSExceptionWithoutMessage (0 ms)
+[----------] 1 test from ErrorsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"ErrorsTest.TCFSExceptionWithoutMessage" end time: Sep 26 20:49 T�rkiye Standart Saati
+"ErrorsTest.TCFSExceptionWithoutMessage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+25/32 Testing: ErrorsTest.ResultSuccess
+25/32 Test: ErrorsTest.ResultSuccess
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=ErrorsTest.ResultSuccess" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"ErrorsTest.ResultSuccess" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = ErrorsTest.ResultSuccess
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ErrorsTest
+[ RUN      ] ErrorsTest.ResultSuccess
+[       OK ] ErrorsTest.ResultSuccess (0 ms)
+[----------] 1 test from ErrorsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"ErrorsTest.ResultSuccess" end time: Sep 26 20:49 T�rkiye Standart Saati
+"ErrorsTest.ResultSuccess" time elapsed: 00:00:00
+----------------------------------------------------------
+
+26/32 Testing: ErrorsTest.ResultError
+26/32 Test: ErrorsTest.ResultError
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=ErrorsTest.ResultError" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"ErrorsTest.ResultError" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = ErrorsTest.ResultError
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ErrorsTest
+[ RUN      ] ErrorsTest.ResultError
+[       OK ] ErrorsTest.ResultError (0 ms)
+[----------] 1 test from ErrorsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.05 sec
+----------------------------------------------------------
+Test Passed.
+"ErrorsTest.ResultError" end time: Sep 26 20:49 T�rkiye Standart Saati
+"ErrorsTest.ResultError" time elapsed: 00:00:00
+----------------------------------------------------------
+
+27/32 Testing: ErrorsTest.ResultVoidSuccess
+27/32 Test: ErrorsTest.ResultVoidSuccess
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=ErrorsTest.ResultVoidSuccess" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"ErrorsTest.ResultVoidSuccess" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = ErrorsTest.ResultVoidSuccess
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ErrorsTest
+[ RUN      ] ErrorsTest.ResultVoidSuccess
+[       OK ] ErrorsTest.ResultVoidSuccess (0 ms)
+[----------] 1 test from ErrorsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.02 sec
+----------------------------------------------------------
+Test Passed.
+"ErrorsTest.ResultVoidSuccess" end time: Sep 26 20:49 T�rkiye Standart Saati
+"ErrorsTest.ResultVoidSuccess" time elapsed: 00:00:00
+----------------------------------------------------------
+
+28/32 Testing: ErrorsTest.ResultVoidError
+28/32 Test: ErrorsTest.ResultVoidError
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=ErrorsTest.ResultVoidError" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"ErrorsTest.ResultVoidError" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = ErrorsTest.ResultVoidError
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ErrorsTest
+[ RUN      ] ErrorsTest.ResultVoidError
+[       OK ] ErrorsTest.ResultVoidError (0 ms)
+[----------] 1 test from ErrorsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ErrorsTest.ResultVoidError" end time: Sep 26 20:49 T�rkiye Standart Saati
+"ErrorsTest.ResultVoidError" time elapsed: 00:00:00
+----------------------------------------------------------
+
+29/32 Testing: ErrorsTest.ResultMoveSemantics
+29/32 Test: ErrorsTest.ResultMoveSemantics
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=ErrorsTest.ResultMoveSemantics" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"ErrorsTest.ResultMoveSemantics" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = ErrorsTest.ResultMoveSemantics
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ErrorsTest
+[ RUN      ] ErrorsTest.ResultMoveSemantics
+[       OK ] ErrorsTest.ResultMoveSemantics (0 ms)
+[----------] 1 test from ErrorsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.01 sec
+----------------------------------------------------------
+Test Passed.
+"ErrorsTest.ResultMoveSemantics" end time: Sep 26 20:49 T�rkiye Standart Saati
+"ErrorsTest.ResultMoveSemantics" time elapsed: 00:00:00
+----------------------------------------------------------
+
+30/32 Testing: ErrorsTest.ResultCopySemantics
+30/32 Test: ErrorsTest.ResultCopySemantics
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=ErrorsTest.ResultCopySemantics" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"ErrorsTest.ResultCopySemantics" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = ErrorsTest.ResultCopySemantics
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ErrorsTest
+[ RUN      ] ErrorsTest.ResultCopySemantics
+[       OK ] ErrorsTest.ResultCopySemantics (0 ms)
+[----------] 1 test from ErrorsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.03 sec
+----------------------------------------------------------
+Test Passed.
+"ErrorsTest.ResultCopySemantics" end time: Sep 26 20:49 T�rkiye Standart Saati
+"ErrorsTest.ResultCopySemantics" time elapsed: 00:00:00
+----------------------------------------------------------
+
+31/32 Testing: ErrorsTest.ResultErrorWithoutMessage
+31/32 Test: ErrorsTest.ResultErrorWithoutMessage
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe" "--gtest_filter=ErrorsTest.ResultErrorWithoutMessage" "--gtest_also_run_disabled_tests"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"ErrorsTest.ResultErrorWithoutMessage" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+Note: Google Test filter = ErrorsTest.ResultErrorWithoutMessage
+[==========] Running 1 test from 1 test suite.
+[----------] Global test environment set-up.
+[----------] 1 test from ErrorsTest
+[ RUN      ] ErrorsTest.ResultErrorWithoutMessage
+[       OK ] ErrorsTest.ResultErrorWithoutMessage (0 ms)
+[----------] 1 test from ErrorsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 1 test from 1 test suite ran. (0 ms total)
+[  PASSED  ] 1 test.
+<end of output>
+Test time =   0.04 sec
+----------------------------------------------------------
+Test Passed.
+"ErrorsTest.ResultErrorWithoutMessage" end time: Sep 26 20:49 T�rkiye Standart Saati
+"ErrorsTest.ResultErrorWithoutMessage" time elapsed: 00:00:00
+----------------------------------------------------------
+
+32/32 Testing: tcfs_unit_tests
+32/32 Test: tcfs_unit_tests
+Command: "C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests/Release/tcfs_tests.exe"
+Directory: C:/Users/excalibur/Desktop/Projeler/C++ Real Project/chronovault/build/tests
+"tcfs_unit_tests" start time: Sep 26 20:49 T�rkiye Standart Saati
+Output:
+----------------------------------------------------------
+Running main() from C:\vcpkg\buildtrees\gtest\src\v1.17.0-0c449efaff.clean\googletest\src\gtest_main.cc
+[==========] Running 31 tests from 3 test suites.
+[----------] Global test environment set-up.
+[----------] 11 tests from PolicyTest
+[ RUN      ] PolicyTest.DefaultConstruction
+[       OK ] PolicyTest.DefaultConstruction (0 ms)
+[ RUN      ] PolicyTest.SetAndGetUnlockTime
+[       OK ] PolicyTest.SetAndGetUnlockTime (0 ms)
+[ RUN      ] PolicyTest.IsUnlockTimeReached
+[       OK ] PolicyTest.IsUnlockTimeReached (0 ms)
+[ RUN      ] PolicyTest.SetAndGetOwner
+[       OK ] PolicyTest.SetAndGetOwner (0 ms)
+[ RUN      ] PolicyTest.SetAndGetLabel
+[       OK ] PolicyTest.SetAndGetLabel (0 ms)
+[ RUN      ] PolicyTest.SetAndGetNotes
+[       OK ] PolicyTest.SetAndGetNotes (0 ms)
+[ RUN      ] PolicyTest.SetAndGetGracePeriod
+[       OK ] PolicyTest.SetAndGetGracePeriod (0 ms)
+[ RUN      ] PolicyTest.SetAndGetAlgorithm
+[       OK ] PolicyTest.SetAndGetAlgorithm (0 ms)
+[ RUN      ] PolicyTest.SetAndGetKDFType
+[       OK ] PolicyTest.SetAndGetKDFType (0 ms)
+[ RUN      ] PolicyTest.JSONSerialization
+[       OK ] PolicyTest.JSONSerialization (0 ms)
+[ RUN      ] PolicyTest.Validation
+[       OK ] PolicyTest.Validation (0 ms)
+[----------] 11 tests from PolicyTest (0 ms total)
+
+[----------] 10 tests from CryptoTest
+[ RUN      ] CryptoTest.KeyGeneration
+[       OK ] CryptoTest.KeyGeneration (7 ms)
+[ RUN      ] CryptoTest.IVGeneration
+[       OK ] CryptoTest.IVGeneration (0 ms)
+[ RUN      ] CryptoTest.SaltGeneration
+[       OK ] CryptoTest.SaltGeneration (0 ms)
+[ RUN      ] CryptoTest.KeyDerivation
+[       OK ] CryptoTest.KeyDerivation (71 ms)
+[ RUN      ] CryptoTest.EncryptionDecryption
+[       OK ] CryptoTest.EncryptionDecryption (0 ms)
+[ RUN      ] CryptoTest.EncryptionWithWrongKey
+[       OK ] CryptoTest.EncryptionWithWrongKey (0 ms)
+[ RUN      ] CryptoTest.SHA256Hashing
+[       OK ] CryptoTest.SHA256Hashing (0 ms)
+[ RUN      ] CryptoTest.HexConversion
+[       OK ] CryptoTest.HexConversion (0 ms)
+[ RUN      ] CryptoTest.Base64Conversion
+[       OK ] CryptoTest.Base64Conversion (0 ms)
+[ RUN      ] CryptoTest.EmptyDataHandling
+[       OK ] CryptoTest.EmptyDataHandling (0 ms)
+[----------] 10 tests from CryptoTest (79 ms total)
+
+[----------] 10 tests from ErrorsTest
+[ RUN      ] ErrorsTest.ErrorCodeToString
+[       OK ] ErrorsTest.ErrorCodeToString (0 ms)
+[ RUN      ] ErrorsTest.TCFSExceptionConstruction
+[       OK ] ErrorsTest.TCFSExceptionConstruction (0 ms)
+[ RUN      ] ErrorsTest.TCFSExceptionWithoutMessage
+[       OK ] ErrorsTest.TCFSExceptionWithoutMessage (0 ms)
+[ RUN      ] ErrorsTest.ResultSuccess
+[       OK ] ErrorsTest.ResultSuccess (0 ms)
+[ RUN      ] ErrorsTest.ResultError
+[       OK ] ErrorsTest.ResultError (0 ms)
+[ RUN      ] ErrorsTest.ResultVoidSuccess
+[       OK ] ErrorsTest.ResultVoidSuccess (0 ms)
+[ RUN      ] ErrorsTest.ResultVoidError
+[       OK ] ErrorsTest.ResultVoidError (0 ms)
+[ RUN      ] ErrorsTest.ResultMoveSemantics
+[       OK ] ErrorsTest.ResultMoveSemantics (0 ms)
+[ RUN      ] ErrorsTest.ResultCopySemantics
+[       OK ] ErrorsTest.ResultCopySemantics (0 ms)
+[ RUN      ] ErrorsTest.ResultErrorWithoutMessage
+[       OK ] ErrorsTest.ResultErrorWithoutMessage (0 ms)
+[----------] 10 tests from ErrorsTest (0 ms total)
+
+[----------] Global test environment tear-down
+[==========] 31 tests from 3 test suites ran. (80 ms total)
+[  PASSED  ] 31 tests.
+<end of output>
+Test time =   0.11 sec
+----------------------------------------------------------
+Test Passed.
+"tcfs_unit_tests" end time: Sep 26 20:49 T�rkiye Standart Saati
 "tcfs_unit_tests" time elapsed: 00:00:00
 ----------------------------------------------------------
 
-End testing: Sep 26 15:22 T�rkiye Standart Saati
+End testing: Sep 26 20:49 T�rkiye Standart Saati

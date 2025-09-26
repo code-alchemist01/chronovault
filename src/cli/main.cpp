@@ -173,12 +173,16 @@ private:
         std::string owner = "user@example.com"; // Default
         auto config_path = fs::path(store_path_) / "config.json";
         if (fs::exists(config_path)) {
-            std::ifstream config_file(config_path);
+            std::ifstream config_file(config_path, std::ios::binary);
             if (config_file) {
-                nlohmann::json config;
-                config_file >> config;
-                if (config.contains("owner")) {
-                    owner = config["owner"];
+                try {
+                    nlohmann::json config;
+                    config_file >> config;
+                    if (config.contains("owner")) {
+                        owner = config["owner"];
+                    }
+                } catch (const nlohmann::json::exception& e) {
+                    std::cerr << "Warning: Failed to parse config file: " << e.what() << std::endl;
                 }
             }
         }
@@ -232,11 +236,19 @@ private:
         metadata["original_filename"] = fs::path(input_file).filename().string();
         
         auto metadata_path = store_output_path.string() + ".meta";
-        std::ofstream meta_output(metadata_path);
+        std::ofstream meta_output(metadata_path, std::ios::binary);
         if (!meta_output) {
             throw tcfs::TCFSException(tcfs::ErrorCode::FILE_ACCESS_ERROR, "Failed to write metadata file: " + metadata_path);
         }
-        meta_output << metadata.dump(2) << std::endl;
+        
+        try {
+            // Use dump with ensure_ascii=false to properly handle UTF-8
+            std::string json_str = metadata.dump(2, ' ', false, nlohmann::json::error_handler_t::replace);
+            meta_output << json_str << std::endl;
+        } catch (const nlohmann::json::exception& e) {
+            meta_output.close();
+            throw tcfs::TCFSException(tcfs::ErrorCode::FILE_ACCESS_ERROR, "JSON serialization error: " + std::string(e.what()));
+        }
         meta_output.close();
         
         // Delete original file (THIS IS THE KEY PART!)
@@ -275,23 +287,32 @@ private:
         }
         
         // Read and parse metadata
-        std::ifstream metadata_file(metadata_path);
+        std::ifstream metadata_file(metadata_path, std::ios::binary);
         if (!metadata_file) {
             throw tcfs::TCFSException(tcfs::ErrorCode::FILE_ACCESS_ERROR, "Failed to read metadata file: " + metadata_path);
         }
-        
+
         nlohmann::json metadata;
-        metadata_file >> metadata;
+        try {
+            metadata_file >> metadata;
+        } catch (const nlohmann::json::exception& e) {
+            metadata_file.close();
+            throw tcfs::TCFSException(tcfs::ErrorCode::InvalidMetadata, "JSON parsing error: " + std::string(e.what()));
+        }
         metadata_file.close();
         
         // Parse policy from metadata
         if (!metadata.contains("policy")) {
             throw tcfs::TCFSException(tcfs::ErrorCode::InvalidMetadata, "Policy not found in metadata");
         }
-        
-        auto policy_result = tcfs::Policy::from_json(metadata["policy"]);
+
+        auto policy_result = tcfs::Policy::from_json(metadata["policy"], true); // Skip time validation for unlock
         if (!policy_result) {
-            throw tcfs::TCFSException(tcfs::ErrorCode::InvalidMetadata, "Failed to parse policy from metadata");
+            std::string error_msg = "Failed to parse policy from metadata";
+            if (!policy_result.error_message().empty()) {
+                error_msg += ": " + policy_result.error_message();
+            }
+            throw tcfs::TCFSException(tcfs::ErrorCode::InvalidMetadata, error_msg);
         }
         
         auto& policy = policy_result.value();
@@ -378,13 +399,18 @@ private:
             throw tcfs::TCFSException(tcfs::ErrorCode::FileNotFound, "Metadata file not found: " + metadata_path);
         }
         
-        std::ifstream metadata_file(metadata_path);
+        std::ifstream metadata_file(metadata_path, std::ios::binary);
         if (!metadata_file) {
             throw tcfs::TCFSException(tcfs::ErrorCode::FILE_ACCESS_ERROR, "Failed to read metadata file: " + metadata_path);
         }
-        
+
         nlohmann::json metadata;
-        metadata_file >> metadata;
+        try {
+            metadata_file >> metadata;
+        } catch (const nlohmann::json::exception& e) {
+            metadata_file.close();
+            throw tcfs::TCFSException(tcfs::ErrorCode::InvalidMetadata, "JSON parsing error: " + std::string(e.what()));
+        }
         metadata_file.close();
         
         std::cout << "Store file: " << store_file_path << std::endl;
@@ -398,7 +424,12 @@ private:
                 std::cout << "Unlock time: " << policy.unlock_time_rfc3339() << std::endl;
                 std::cout << "Time remaining: " << policy.time_remaining().count() << " seconds" << std::endl;
                 std::cout << "Can unlock: " << (policy.is_unlock_time_reached() ? "Yes" : "No") << std::endl;
+            } else {
+                std::cout << "Warning: Failed to parse policy: " << policy_result.error_message() << std::endl;
+                std::cout << "Raw policy data: " << metadata["policy"].dump() << std::endl;
             }
+        } else {
+            std::cout << "Warning: No policy found in metadata" << std::endl;
         }
         
         if (metadata.contains("created_at")) {
@@ -440,7 +471,7 @@ private:
                         // Try to read metadata if it exists
                         if (fs::exists(metadata_path)) {
                             try {
-                                std::ifstream metadata_file(metadata_path);
+                                std::ifstream metadata_file(metadata_path, std::ios::binary);
                                 nlohmann::json metadata;
                                 metadata_file >> metadata;
                                 
@@ -471,7 +502,11 @@ private:
                                         if (!policy.notes().empty()) {
                                             std::cout << "Notes: " << policy.notes() << std::endl;
                                         }
+                                    } else {
+                                        std::cout << "Warning: Failed to parse policy: " << policy_result.error_message() << std::endl;
                                     }
+                                } else {
+                                    std::cout << "Warning: No policy found in metadata" << std::endl;
                                 }
                             } catch (const std::exception& e) {
                                 std::cout << "Warning: Could not read metadata: " << e.what() << std::endl;

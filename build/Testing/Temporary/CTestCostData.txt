@@ -1,84 +1,33 @@
-ºúøµW.DefaultConstruction 0 0
-░øøµW.SetAndGetUnlockTime 0 0
- ®øµW.IsUnlockTimeReached 0 0
- ñøµW.SetAndGetOwner 2 0.0270736
-ÑøµW.SetAndGetLabel 2 0.0324682
-.SetAndGetNotes 2 0.0149688
-ÓéáµW.SetAndGetGracePeriod 0 0
-áüáµW.SetAndGetAlgorithm 0 0
-PüáµW.SetAndGetKDFType 0 0
-ÇâáµW.JSONSerialization 0 0
-@éáµW.Validation 2 0.0375085
-­åáµW.KeyGeneration 2 0.0290537
-päáµW.IVGeneration 1 0
-`ìğµW.SaltGeneration 2 0.0394726
-ÇÕğµW.KeyDerivation 2 0.0318962
-ÓÚğµW.EncryptionDecryption 0 0
-áğµW.EncryptionWithWrongKey 0 0
-0ÕğµW.SHA256Hashing 2 0.0187862
- ÙğµW.HexConversion 2 0.0188949
-pµğµW.Base64Conversion 0 0
-Ó¯ğµW.EmptyDataHandling 0 0
-.ErrorCodeToString 2 0.010963
-p­ğµW.TCFSExceptionConstruction 0 0
-.TCFSExceptionWithoutMessage 0 0
-└µğµW.ResultSuccess 2 0.0404829
-ºÛğµW.ResultError 2 0.0263984
-­ÿğµW.ResultVoidSuccess 0 0
-­×ğµW.ResultVoidError 0 0
-@¯ğµW.ResultMoveSemantics 0 0
-º´ğµW.ResultCopySemantics 0 0
-p4═µW.ResultErrorWithoutMessage 0 0
-tcfs_unit_tests 0 0
-@èûUû.DefaultConstruction 0 0
-.SetAndGetUnlockTime 1 0.033901
-PäûUû.IsUnlockTimeReached 0 0
-ÇåûUû.SetAndGetOwner 1 0.0482363
-­ûUû.SetAndGetLabel 1 0.0497942
-0ïûUû.SetAndGetNotes 1 0.0541646
-áb£Uû.SetAndGetGracePeriod 0 0
-á]£Uû.SetAndGetAlgorithm 0 0
-`a£Uû.SetAndGetKDFType 0 0
-░\£Uû.JSONSerialization 0 0
-Çd£Uû.Validation 1 0.071464
-0Z£Uû.KeyGeneration 1 0.0697968
-a£Uû.IVGeneration 1 0.0777521
-Éc£Uû.SaltGeneration 0 0
-0_£Uû.KeyDerivation 1 0.0511992
-.EncryptionDecryption 1 0.0474733
-ág£Uû.EncryptionWithWrongKey 0 0
-Pg£Uû.SHA256Hashing 1 0.0772938
-pe£Uû.HexConversion 1 0.0335839
-`f£Uû.Base64Conversion 0 0
-ÇZ£Uû.EmptyDataHandling 0 0
-@Y£Uû.ErrorCodeToString 0 0
-ºZ£Uû.TCFSExceptionConstruction 0 0
- µúUû.TCFSExceptionWithoutMessage 0 0
-@¯úUû.ResultSuccess 0 0
-Ó¯úUû.ResultError 1 0.043002
-úUû.ResultVoidSuccess 0 0
-`úUû.ResultVoidError 0 0
- ßúUû.ResultMoveSemantics 0 0
-É¯úUû.ResultCopySemantics 0 0
-░úUû.ResultErrorWithoutMessage 0 0
+PolicyTest.DefaultConstruction 3 0.0150681
+PolicyTest.SetAndGetUnlockTime 3 0.0154364
+PolicyTest.IsUnlockTimeReached 3 0.0130918
+PolicyTest.SetAndGetOwner 3 0.0136501
+PolicyTest.SetAndGetLabel 3 0.0132001
+PolicyTest.SetAndGetNotes 3 0.0136416
+PolicyTest.SetAndGetGracePeriod 3 0.0139266
+PolicyTest.SetAndGetAlgorithm 3 0.0134149
+PolicyTest.SetAndGetKDFType 3 0.0158282
+PolicyTest.JSONSerialization 3 0.0148377
+PolicyTest.Validation 3 0.0158357
+CryptoTest.KeyGeneration 3 0.0154773
+CryptoTest.IVGeneration 3 0.017712
+CryptoTest.SaltGeneration 3 0.0186432
+CryptoTest.KeyDerivation 3 0.0462014
+CryptoTest.EncryptionDecryption 3 0.0134444
+CryptoTest.EncryptionWithWrongKey 3 0.0219484
+CryptoTest.SHA256Hashing 3 0.0159718
+CryptoTest.HexConversion 2 0.0216937
+CryptoTest.Base64Conversion 3 0.0129386
+CryptoTest.EmptyDataHandling 3 0.0140295
+ErrorsTest.ErrorCodeToString 3 0.00682913
+ErrorsTest.TCFSExceptionConstruction 3 0.00765293
+ErrorsTest.TCFSExceptionWithoutMessage 3 0.0168303
+ErrorsTest.ResultSuccess 3 0.0157481
+ErrorsTest.ResultError 3 0.0166877
+ErrorsTest.ResultVoidSuccess 3 0.00617493
+ErrorsTest.ResultVoidError 3 0.00461657
+ErrorsTest.ResultMoveSemantics 3 0.00468977
+ErrorsTest.ResultCopySemantics 3 0.00880477
+ErrorsTest.ResultErrorWithoutMessage 3 0.0130168
+tcfs_unit_tests 1 0.108773
 ---
-@èûUû.DefaultConstruction
-PäûUû.IsUnlockTimeReached
-áb£Uû.SetAndGetGracePeriod
-á]£Uû.SetAndGetAlgorithm
-`a£Uû.SetAndGetKDFType
-░\£Uû.JSONSerialization
-Éc£Uû.SaltGeneration
-ág£Uû.EncryptionWithWrongKey
-`f£Uû.Base64Conversion
-ÇZ£Uû.EmptyDataHandling
-@Y£Uû.ErrorCodeToString
-ºZ£Uû.TCFSExceptionConstruction
- µúUû.TCFSExceptionWithoutMessage
-@¯úUû.ResultSuccess
-úUû.ResultVoidSuccess
-`úUû.ResultVoidError
- ßúUû.ResultMoveSemantics
-É¯úUû.ResultCopySemantics
-░úUû.ResultErrorWithoutMessage
-tcfs_unit_tests

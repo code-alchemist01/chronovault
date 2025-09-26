@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <CustomBuild Include="C:\Users\excalibur\Desktop\Projeler\Rust\tcfs\build\CMakeFiles\68ef5450083c9a442e62e02f38c75fab\RUN_TESTS_force.rule">
+    <CustomBuild Include="C:\Users\excalibur\Desktop\Projeler\C++ Real Project\chronovault\build\CMakeFiles\6f0e817f0cb5d7605ba2c950eca0c603\RUN_TESTS_force.rule">
       <Filter>CMake Rules</Filter>
     </CustomBuild>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="CMake Rules">
-      <UniqueIdentifier>{5CB68333-5F33-35DF-80E4-D5AF431654AB}</UniqueIdentifier>
+      <UniqueIdentifier>{60BD60D8-6F1F-3D40-BBC6-0E35FA54D651}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
